@@ -51,19 +51,20 @@ public class ServerProcessHandler extends SimpleChannelInboundHandler<AcsRequest
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
-        log.info("客户端{}连接成功", ctx.channel().remoteAddress());
+        log.info("{} -> [连接成功]", ctx.channel().remoteAddress());
     }
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         super.channelInactive(ctx);
-        log.info("客户端{}断开连接", ctx.channel().remoteAddress());
+        log.info("{} -> [断开连接]", ctx.channel().remoteAddress());
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
 //        super.exceptionCaught(ctx, cause);
         cause.printStackTrace();
-        log.error("客户端{}错误", ctx.channel().remoteAddress().toString());
+        log.error("{} -> [异常]原因：{}", ctx.channel().remoteAddress().toString(),
+                cause.getMessage());
     }
 }

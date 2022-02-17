@@ -1,23 +1,19 @@
 package com.wimetro.acs.server.runner;
 
 import com.wimetro.acs.server.codec.FrameDecoder;
-import com.wimetro.acs.server.codec.FrameEncoder;
 import com.wimetro.acs.server.codec.ProtocolDecoder;
 import com.wimetro.acs.server.codec.ProtocolEncoder;
-import com.wimetro.acs.server.handler.ServerIdleCheckHandler;
+import com.wimetro.acs.server.handler.KeepaliveHandler;
 import com.wimetro.acs.server.handler.ServerProcessHandler;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import io.netty.util.concurrent.DefaultEventExecutorGroup;
+import io.netty.handler.timeout.IdleStateHandler;
 import io.netty.util.concurrent.DefaultThreadFactory;
-import io.netty.util.concurrent.EventExecutorGroup;
 import io.netty.util.concurrent.UnorderedThreadPoolEventExecutor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
@@ -50,10 +46,10 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        ServerBootstrap serverBootstrap = new ServerBootstrap();
-        serverBootstrap.channel(NioServerSocketChannel.class);
+        ServerBootstrap bootstrap = new ServerBootstrap();
+        bootstrap.channel(NioServerSocketChannel.class);
 
-        serverBootstrap.option(ChannelOption.SO_BACKLOG, connections)
+        bootstrap.option(ChannelOption.SO_BACKLOG, connections)
                 .childOption(ChannelOption.TCP_NODELAY, true)
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
                 .childOption(ChannelOption.CONNECT_TIMEOUT_MILLIS, 60000);
@@ -65,19 +61,19 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
                 10, new DefaultThreadFactory("business"));
 
         try {
-            serverBootstrap.group(bossGroup, workGroup);
-
+            bootstrap.group(bossGroup, workGroup);
             //log
             LoggingHandler debugLogHandler = new LoggingHandler(LogLevel.DEBUG);
             LoggingHandler infoLogHandler = new LoggingHandler(LogLevel.INFO);
 
-            serverBootstrap.childHandler(new ChannelInitializer<NioSocketChannel>() {
+            bootstrap.childHandler(new ChannelInitializer<NioSocketChannel>() {
                 @Override
                 protected void initChannel(NioSocketChannel ch) throws Exception {
                     ChannelPipeline pipeline = ch.pipeline();
 
 //                    pipeline.addLast("debegLog", debugLogHandler);
-//                    pipeline.addLast("idleHandler", new ServerIdleCheckHandler());
+                    pipeline.addLast("idleHandler",
+                            new IdleStateHandler(20, 0, 0));
 
                     pipeline.addLast("frameDecoder", new FrameDecoder());
                     pipeline.addLast("protocolDecoder", new ProtocolDecoder());
@@ -86,10 +82,12 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
 //                    pipeline.addLast("infolog", infoLogHandler);
 
                     pipeline.addLast(businessGroup, new ServerProcessHandler());
+
+                    pipeline.addLast("keepalive", new KeepaliveHandler());
                 }
             });
 
-            ChannelFuture channelFuture = serverBootstrap.bind(port).sync();
+            ChannelFuture channelFuture = bootstrap.bind(port).sync();
             this.serverChannel = channelFuture.channel();
             channelFuture.channel().closeFuture().sync();
         } catch (InterruptedException e) {
