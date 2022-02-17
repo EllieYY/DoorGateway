@@ -1,0 +1,12 @@
+2022-02-15 11:27:37 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 9724 (D:\00_netty\AccessControlService\target\classes started by ansen in D:\00_netty\AccessControlService)
+2022-02-15 11:27:37 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-15 11:27:38 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.307 seconds (JVM running for 6.409)
+2022-02-15 11:29:09 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 22324 (D:\00_netty\AccessControlService\target\classes started by ansen in D:\00_netty\AccessControlService)
+2022-02-15 11:29:09 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-15 11:29:09 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.392 seconds (JVM running for 3.01)
+2022-02-15 11:31:53 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 8088 (D:\00_netty\AccessControlService\target\classes started by ansen in D:\00_netty\AccessControlService)
+2022-02-15 11:31:53 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-15 11:31:53 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 0.938 seconds (JVM running for 1.809)
+2022-02-15 11:33:01 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 24400 (D:\00_netty\AccessControlService\target\classes started by ansen in D:\00_netty\AccessControlService)
+2022-02-15 11:33:01 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-15 11:33:02 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 0.78 seconds (JVM running for 1.674)

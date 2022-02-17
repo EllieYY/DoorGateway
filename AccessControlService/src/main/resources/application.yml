@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    #激活开发环境
+    active: dev
+
+server:
+  port: 9008
+
+netty:
+  tcp:
+    # 服务端口
+    port: 4070
+    # 绑定的网卡
+    ip: 0.0.0.0
+    # 消息帧最大体积
+    max-frame-size: 10240

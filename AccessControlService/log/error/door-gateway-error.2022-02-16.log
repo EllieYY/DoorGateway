@@ -1,0 +1,576 @@
+2022-02-16 09:09:15 ERROR worker-3-14 i.n.u.ResourceLeakDetector LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:349)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:123)
+	io.netty.buffer.AbstractByteBuf.readBytes(AbstractByteBuf.java:879)
+	com.wimetro.acs.common.Message.decode(Message.java:49)
+	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:25)
+	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:17)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 09:10:04 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 09:10:15 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1140)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 09:10:55 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:11:09 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:11:24 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:11:35 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:11:55 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:12:15 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:12:35 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端%1错误：%2
+2022-02-16 09:13:05 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端%1错误
+2022-02-16 09:13:15 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端%1错误
+2022-02-16 09:15:26 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端%1错误
+2022-02-16 09:15:41 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端%1错误
+2022-02-16 09:20:35 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端%1错误
+2022-02-16 09:26:50 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60316错误
+2022-02-16 09:27:05 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60331错误
+2022-02-16 09:27:16 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60344错误
+2022-02-16 09:27:30 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60359错误
+2022-02-16 09:27:45 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60374错误
+2022-02-16 09:27:56 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60387错误
+2022-02-16 09:28:16 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60408错误
+2022-02-16 09:29:47 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60504错误
+2022-02-16 09:30:02 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60521错误
+2022-02-16 09:30:16 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60536错误
+2022-02-16 09:30:30 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60551错误
+2022-02-16 09:30:44 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60566错误
+2022-02-16 09:30:56 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:60579错误
+2022-02-16 09:40:56 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41298错误
+2022-02-16 09:41:11 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:59542错误
+2022-02-16 09:41:11 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:59542错误
+2022-02-16 09:41:36 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:59570错误
+2022-02-16 09:41:56 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:59570错误
+2022-02-16 09:42:11 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:59605错误
+2022-02-16 09:42:11 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:59605错误
+2022-02-16 10:21:35 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51620错误
+2022-02-16 10:21:50 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51637错误
+2022-02-16 10:22:05 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51652错误
+2022-02-16 10:22:19 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51667错误
+2022-02-16 10:22:33 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51682错误
+2022-02-16 10:23:16 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51729错误
+2022-02-16 10:23:31 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51744错误
+2022-02-16 10:38:19 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47403错误
+2022-02-16 10:38:19 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47403错误
+2022-02-16 10:38:19 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47403错误
+2022-02-16 10:38:39 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47403错误
+2022-02-16 10:38:39 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47424错误
+2022-02-16 10:38:39 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47424错误
+2022-02-16 10:38:59 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47424错误
+2022-02-16 10:39:00 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47445错误
+2022-02-16 10:39:00 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47445错误
+2022-02-16 10:39:19 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47445错误
+2022-02-16 10:39:19 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47466错误
+2022-02-16 10:39:19 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47466错误
+2022-02-16 10:39:39 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47466错误
+2022-02-16 10:39:40 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47487错误
+2022-02-16 10:39:40 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47487错误
+2022-02-16 10:39:59 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47487错误
+2022-02-16 10:40:00 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47508错误
+2022-02-16 10:40:00 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47508错误
+2022-02-16 10:40:19 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47508错误
+2022-02-16 10:40:20 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47529错误
+2022-02-16 10:40:20 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47529错误
+2022-02-16 10:40:39 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47529错误
+2022-02-16 10:40:40 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47550错误
+2022-02-16 10:40:40 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47550错误
+2022-02-16 10:40:59 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:47550错误
+2022-02-16 10:41:00 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46633错误
+2022-02-16 10:41:00 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46633错误
+2022-02-16 10:41:19 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46633错误
+2022-02-16 10:41:20 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46654错误
+2022-02-16 10:41:20 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46654错误
+2022-02-16 10:41:39 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46654错误
+2022-02-16 10:41:40 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46675错误
+2022-02-16 10:41:40 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:46675错误
+2022-02-16 11:30:42 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:58602错误
+2022-02-16 11:30:42 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:58602错误
+2022-02-16 11:30:42 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:58602错误
+2022-02-16 14:24:12 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42703错误
+2022-02-16 14:24:32 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42724错误
+2022-02-16 14:24:46 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42739错误
+2022-02-16 14:25:01 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42755错误
+2022-02-16 14:25:12 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42767错误
+2022-02-16 14:25:26 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42782错误
+2022-02-16 14:25:41 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42797错误
+2022-02-16 14:30:12 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:49123错误
+2022-02-16 14:30:26 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:49138错误
+2022-02-16 14:30:40 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:49153错误
+2022-02-16 14:30:52 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:49166错误
+2022-02-16 14:31:12 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:53185错误
+2022-02-16 14:31:52 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:53228错误
+2022-02-16 14:35:25 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:05 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:05 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:05 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:09 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:09 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:09 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:09 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:09 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler not writable now, message dropped
+2022-02-16 14:36:09 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:53482错误
+2022-02-16 14:37:54 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41188错误
+2022-02-16 14:38:07 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41223错误
+2022-02-16 14:38:21 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41238错误
+2022-02-16 14:38:32 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41251错误
+2022-02-16 14:38:47 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41266错误
+2022-02-16 14:39:01 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41281错误
+2022-02-16 14:39:12 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41294错误
+2022-02-16 14:39:32 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41315错误
+2022-02-16 14:39:47 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41330错误
+2022-02-16 14:40:01 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41345错误
+2022-02-16 14:40:12 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41358错误
+2022-02-16 14:40:32 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41379错误
+2022-02-16 14:40:47 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:41394错误
+2022-02-16 14:41:03 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50689错误
+2022-02-16 14:41:12 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50700错误
+2022-02-16 14:41:33 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50721错误
+2022-02-16 14:41:47 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50736错误
+2022-02-16 14:42:02 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50751错误
+2022-02-16 14:42:13 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50764错误
+2022-02-16 14:42:33 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50785错误
+2022-02-16 14:42:49 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50800错误
+2022-02-16 14:43:04 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50817错误
+2022-02-16 14:43:19 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50834错误
+2022-02-16 14:43:33 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50849错误
+2022-02-16 14:43:53 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50870错误
+2022-02-16 14:44:07 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50885错误
+2022-02-16 14:44:22 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:50900错误
+2022-02-16 14:48:08 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:51784错误
+2022-02-16 14:55:52 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:38824错误
+2022-02-16 14:56:22 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36728错误
+2022-02-16 14:56:33 ERROR worker-3-4 i.n.u.ResourceLeakDetector LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:349)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:123)
+	io.netty.buffer.AbstractByteBuf.readBytes(AbstractByteBuf.java:879)
+	com.wimetro.acs.common.Message.decode(Message.java:47)
+	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 14:56:33 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36740错误
+2022-02-16 14:56:48 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36756错误
+2022-02-16 14:57:03 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36771错误
+2022-02-16 14:57:13 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36783错误
+2022-02-16 14:57:33 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36804错误
+2022-02-16 14:57:48 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36820错误
+2022-02-16 14:58:02 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36835错误
+2022-02-16 14:58:13 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36847错误
+2022-02-16 14:59:34 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:36931错误
+2022-02-16 16:17:11 ERROR worker-3-1 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:11 ERROR worker-3-1 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:11 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48313错误
+2022-02-16 16:17:11 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48313错误
+2022-02-16 16:17:11 ERROR worker-3-1 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:11 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48313错误
+2022-02-16 16:17:18 ERROR worker-3-1 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:18 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48313错误
+2022-02-16 16:17:31 ERROR worker-3-2 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:31 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48334错误
+2022-02-16 16:17:31 ERROR worker-3-2 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:31 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48334错误
+2022-02-16 16:17:38 ERROR worker-3-2 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:38 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48334错误
+2022-02-16 16:17:46 ERROR worker-3-3 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:46 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48349错误
+2022-02-16 16:17:46 ERROR worker-3-3 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:46 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48349错误
+2022-02-16 16:17:58 ERROR worker-3-3 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:17:58 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48349错误
+2022-02-16 16:18:06 ERROR worker-3-4 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:06 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48370错误
+2022-02-16 16:18:06 ERROR worker-3-4 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:06 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48370错误
+2022-02-16 16:18:18 ERROR worker-3-4 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:18 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48370错误
+2022-02-16 16:18:21 ERROR worker-3-5 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:21 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48387错误
+2022-02-16 16:18:21 ERROR worker-3-5 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:21 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48387错误
+2022-02-16 16:18:38 ERROR worker-3-5 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:38 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48387错误
+2022-02-16 16:18:41 ERROR worker-3-6 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:41 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48408错误
+2022-02-16 16:18:41 ERROR worker-3-6 c.w.a.common.Message 消息体参数个数小于1，解析失败
+2022-02-16 16:18:41 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48408错误
+2022-02-16 16:18:58 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48425错误
+2022-02-16 16:18:58 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48425错误
+2022-02-16 16:18:58 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48425错误
+2022-02-16 16:19:16 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48444错误
+2022-02-16 16:19:16 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48444错误
+2022-02-16 16:19:18 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48444错误
+2022-02-16 16:19:37 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48465错误
+2022-02-16 16:19:37 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48465错误
+2022-02-16 16:19:38 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48465错误
+2022-02-16 16:19:51 ERROR worker-3-1 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:19:51 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48482错误
+2022-02-16 16:19:51 ERROR worker-3-1 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:19:51 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48482错误
+2022-02-16 16:19:58 ERROR worker-3-1 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:19:58 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48482错误
+2022-02-16 16:20:12 ERROR worker-3-2 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:20:12 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48503错误
+2022-02-16 16:20:12 ERROR worker-3-2 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:20:12 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48503错误
+2022-02-16 16:20:18 ERROR worker-3-2 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:20:18 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48503错误
+2022-02-16 16:20:26 ERROR worker-3-3 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:20:26 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48518错误
+2022-02-16 16:20:27 ERROR worker-3-3 c.w.a.common.Message 未定义解码方法：toStr，消息解析失败
+java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldParser.toStr(java.lang.String)
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
+	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
+	at com.wimetro.acs.common.Message.decode(Message.java:107)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-16 16:20:27 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48518错误
+2022-02-16 16:45:15 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42164错误
+2022-02-16 16:45:30 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42180错误
+2022-02-16 16:45:40 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:42191错误
+2022-02-16 16:47:06 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:38312错误
+2022-02-16 16:49:32 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:38468错误
+2022-02-16 16:49:47 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:38484错误
