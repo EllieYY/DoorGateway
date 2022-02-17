@@ -29,7 +29,8 @@ import java.util.List;
 @Slf4j
 public abstract class Message<T extends MessageBody> {
 
-    public static final String MSG_SPLITTER = ";";
+    private static final String MSG_SPLITTER = ";";
+    private static final int MSG_LENGTH_FIELD_LENGTH = 4;
 
     private MessageHeader messageHeader;
     private T messageBody;
@@ -39,20 +40,27 @@ public abstract class Message<T extends MessageBody> {
     }
 
     public void encode(ByteBuf byteBuf) {
-        // 控制字符串长度4，高位补0
+        // 报文头
         String msgTypeStr = String.format("%04d", messageHeader.getMsgType());
-        byteBuf.writeBytes(msgTypeStr.getBytes(StandardCharsets.UTF_8));
-        byteBuf.writeChar(';');
-        // 长度字段预留
-        byteBuf.writeChar(';');
+        String msgHeadStr = msgTypeStr + ";";
 
         // 报文体编码
         Class cls = messageBody.getClass();
         List<AcsCmdPropParam> sParams = getSortedParams(cls);
         String bodyStr = encodeMsgBody(sParams);
+
+        // 长度计算
+        int length = msgHeadStr.length() + bodyStr.length() + MSG_LENGTH_FIELD_LENGTH + 1;
+        String lengthStr = String.format("%04d", length) + ";";
+
+        // 报文组装
+        byteBuf.writeBytes(msgHeadStr.getBytes(StandardCharsets.UTF_8));
+        byteBuf.writeBytes(lengthStr.getBytes(StandardCharsets.UTF_8));
         if (StringUtils.hasText(bodyStr)) {
             byteBuf.writeBytes(bodyStr.getBytes(StandardCharsets.UTF_8));
         }
+
+        log.info("[encode]{}", byteBuf.toString(StandardCharsets.UTF_8));
     }
 
     private String encodeMsgBody(List<AcsCmdPropParam> sParams) {
@@ -103,7 +111,10 @@ public abstract class Message<T extends MessageBody> {
 //        T body = (T)constructor.newInstance(msgBodyStr);
         this.messageBody = body;
 
-        System.out.println("decode: " + messageHeader.getMsgType() + " -- " + body.toString());
+        log.info("[decode]type={},length={},{}",
+                messageHeader.getMsgType(),
+                msgLengthBuf.toString(StandardCharsets.UTF_8),
+                body.toString());
     }
 
     private T decodeMsgBody(int msgType, String msgBodyStr) {

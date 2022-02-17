@@ -19,15 +19,9 @@ import java.util.List;
 public class ProtocolEncoder extends MessageToMessageEncoder<AcsResponseMessage> {
     @Override
     protected void encode(ChannelHandlerContext ctx, AcsResponseMessage responseMessage, List<Object> out) throws Exception {
-//        log.info("ProtocolEncoder");
 
         ByteBuf buffer = ctx.alloc().buffer();
         responseMessage.encode(buffer);
-
-        // TODO:
-        String contextStr = buffer.toString(CharsetUtil.UTF_8);
-        log.info("发送消息：" + contextStr);
-
         out.add(buffer);
     }
 }

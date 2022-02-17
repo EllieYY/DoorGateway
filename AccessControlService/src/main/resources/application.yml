@@ -12,5 +12,11 @@ netty:
     port: 4070
     # 绑定的网卡
     ip: 0.0.0.0
-    # 消息帧最大体积
-    max-frame-size: 10240
+    # 服务端连接队列长度
+    connections: 2048
+
+logging:
+  level:
+    root: INFO
+#    io:
+#      netty: DEBUG

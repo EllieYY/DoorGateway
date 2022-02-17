@@ -42,6 +42,8 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
 
     @Value("${netty.tcp.port}")
     private int port;
+    @Value("${netty.tcp.connections}")
+    private int connections;
 
     private ApplicationContext applicationContext;
     private Channel serverChannel;
@@ -50,6 +52,11 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
     public void run(ApplicationArguments args) throws Exception {
         ServerBootstrap serverBootstrap = new ServerBootstrap();
         serverBootstrap.channel(NioServerSocketChannel.class);
+
+        serverBootstrap.option(ChannelOption.SO_BACKLOG, connections)
+                .childOption(ChannelOption.TCP_NODELAY, true)
+                .childOption(ChannelOption.SO_KEEPALIVE, true)
+                .childOption(ChannelOption.CONNECT_TIMEOUT_MILLIS, 60000);
 
         //thread
         NioEventLoopGroup bossGroup = new NioEventLoopGroup(0, new DefaultThreadFactory("boss"));
@@ -69,16 +76,14 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
                 protected void initChannel(NioSocketChannel ch) throws Exception {
                     ChannelPipeline pipeline = ch.pipeline();
 
-                    pipeline.addLast("debegLog", debugLogHandler);
+//                    pipeline.addLast("debegLog", debugLogHandler);
 //                    pipeline.addLast("idleHandler", new ServerIdleCheckHandler());
 
                     pipeline.addLast("frameDecoder", new FrameDecoder());
-                    pipeline.addLast("frameEncoder", new FrameEncoder());
-
                     pipeline.addLast("protocolDecoder", new ProtocolDecoder());
                     pipeline.addLast("protocolEncoder", new ProtocolEncoder());
 
-                    pipeline.addLast("infolog", infoLogHandler);
+//                    pipeline.addLast("infolog", infoLogHandler);
 
                     pipeline.addLast(businessGroup, new ServerProcessHandler());
                 }
