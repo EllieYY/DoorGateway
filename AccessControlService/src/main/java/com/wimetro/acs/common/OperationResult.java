@@ -2,6 +2,8 @@ package com.wimetro.acs.common;
 
 import lombok.Data;
 
+import java.nio.channels.Channel;
+
 /**
  * @title: OperationResult
  * @author: Ellie
@@ -10,4 +12,5 @@ import lombok.Data;
  **/
 @Data
 public abstract class OperationResult extends MessageBody {
+//    public abstract String getTargetIpString();
 }

@@ -1,5 +1,6 @@
 package com.wimetro.acs.server.codec;
 
+import com.wimetro.acs.common.Constants;
 import io.netty.buffer.ByteBuf;
 import io.netty.handler.codec.DecoderException;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
@@ -7,15 +8,15 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import java.nio.ByteOrder;
 
 /**
- * @title: FrameDecoder
+ * @title: WebFrameDecoder
  * @author: Ellie
  * @date: 2022/02/10 10:45
  * @description:
  **/
-public class FrameDecoder extends LengthFieldBasedFrameDecoder {
+public class WebFrameDecoder extends LengthFieldBasedFrameDecoder {
 
-    public FrameDecoder() {
-        super(Integer.MAX_VALUE, 5, 4, -9, 0);
+    public WebFrameDecoder() {
+        super(Integer.MAX_VALUE, 21, 4, -25, 0);
     }
 
 
@@ -37,7 +38,7 @@ public class FrameDecoder extends LengthFieldBasedFrameDecoder {
                 byte[] dst = new byte[length];
                 buf.getBytes(offset, dst, 0, length);
                 String lengthStr = new String(dst, 0, length);
-                frameLength = Long.parseLong(lengthStr);
+                frameLength = Long.parseLong(lengthStr) + Constants.MSG_PREFIX_LENGTH;
 //                frameLength = buf.getUnsignedInt(offset);
                 break;
             case 5:

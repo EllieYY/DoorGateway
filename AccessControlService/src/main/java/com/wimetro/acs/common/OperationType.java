@@ -2,6 +2,9 @@ package com.wimetro.acs.common;
 
 import com.wimetro.acs.common.device.CommonOperation;
 import com.wimetro.acs.common.device.CommonOperationResult;
+import com.wimetro.acs.common.device.Operation0095;
+import com.wimetro.acs.common.keepalive.KeepaliveOperation;
+import com.wimetro.acs.common.keepalive.KeepaliveOperationResult;
 
 import java.util.function.Predicate;
 
@@ -13,23 +16,32 @@ import java.util.function.Predicate;
  **/
 public enum OperationType {
 //    AUTH(1, AuthOperation.class, AuthOperationResult.class),
-//    KEEPALIVE(2, KeepaliveOperation.class, KeepaliveOperationResult.class),
-    ORDER2(1065, CommonOperation.class, CommonOperationResult.class),
-    ORDER1(1042, CommonOperation.class, CommonOperationResult.class),
-    ORDER(1080, CommonOperation.class, CommonOperationResult.class);
+    READ_CARD(1022, 1022, CommonOperation.class, CommonOperationResult.class),
+    READ_CARD_RSP(22, 22, CommonOperation.class, CommonOperationResult.class),
+    KEEPALIVE(95, 95, Operation0095.class, CommonOperationResult.class),
+    EVENT_PACKAGE(1065, 67, CommonOperation.class, CommonOperationResult.class),
+    REGISTRY(1042, 70, CommonOperation.class, CommonOperationResult.class),
+    HEART(1080, 80, CommonOperation.class, CommonOperationResult.class);
 
     private int opCode;
+    private int reOpCode;
     private Class<? extends Operation> operationClazz;
     private Class<? extends OperationResult> operationResultClazz;
 
-    OperationType(int opCode, Class<? extends Operation> operationClazz, Class<? extends OperationResult> responseClass) {
+    OperationType(int opCode, int reOpCode,
+                  Class<? extends Operation> operationClazz, Class<? extends OperationResult> responseClass) {
         this.opCode = opCode;
+        this.reOpCode = reOpCode;
         this.operationClazz = operationClazz;
         this.operationResultClazz = responseClass;
     }
 
     public int getOpCode(){
         return opCode;
+    }
+
+    public int getReOpCode() {
+        return reOpCode;
     }
 
     public Class<? extends Operation> getOperationClazz() {

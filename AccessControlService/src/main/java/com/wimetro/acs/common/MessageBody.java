@@ -7,4 +7,5 @@ package com.wimetro.acs.common;
  * @description:
  **/
 public abstract class MessageBody {
+
 }

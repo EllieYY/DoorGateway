@@ -1,0 +1,47 @@
+2022-02-18 08:34:27 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53549 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:35:27 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53610 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:36:07 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53671 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:37:07 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41218 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:38:07 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41279 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:39:47 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41340 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:40:47 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41441 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:14:45 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50865 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:16:05 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50926 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:17:25 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39068 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:18:25 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39109 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 16:39:33 ERROR worker-3-1 i.n.u.ResourceLeakDetector LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:349)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:123)
+	io.netty.buffer.AbstractByteBuf.readBytes(AbstractByteBuf.java:879)
+	com.wimetro.acs.common.Message.decode(Message.java:94)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.base/java.lang.Thread.run(Thread.java:834)

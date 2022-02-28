@@ -10,5 +10,7 @@ import lombok.Data;
  **/
 @Data
 public class MessageHeader {
+    private String sourceIp;
+    private String targetIp;
     private int msgType;
 }

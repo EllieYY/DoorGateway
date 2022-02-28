@@ -13,13 +13,16 @@ public class AcsRequestMessage extends Message<Operation>{
         return OperationType.fromOpCode(opcode).getOperationClazz();
     }
 
+    public int getResponseOperationCode(int opcode) {
+        return OperationType.fromOpCode(opcode).getReOpCode();
+    }
+
     public AcsRequestMessage(){}
 
-    public AcsRequestMessage(Long streamId, Operation operation){
-//        MessageHeader messageHeader = new MessageHeader();
-////        messageHeader.setStreamId(streamId);
-//        messageHeader.setMsgType(OperationType.fromOperation(operation).getOpCode());
-//        this.setMessageHeader(messageHeader);
-//        this.setMessageBody(operation);
+    public AcsRequestMessage(int opCode, Operation operation){
+        MessageHeader messageHeader = new MessageHeader();
+        messageHeader.setMsgType(opCode);
+        this.setMessageHeader(messageHeader);
+        this.setMessageBody(operation);
     }
 }

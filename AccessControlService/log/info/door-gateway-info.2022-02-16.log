@@ -1518,8 +1518,8 @@ Created at:
 	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:123)
 	io.netty.buffer.AbstractByteBuf.readBytes(AbstractByteBuf.java:879)
 	com.wimetro.acs.common.Message.decode(Message.java:49)
-	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:25)
-	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:17)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:25)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:17)
 	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -2363,8 +2363,8 @@ Caused by: java.lang.NumberFormatException: For input string: " GMT"
 	at java.base/java.lang.Integer.parseInt(Integer.java:638)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
 	at com.wimetro.acs.common.Message.decode(Message.java:53)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 16 common frames omitted
 2022-02-16 09:42:56 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;09:43:29 GMT 02/16/2022;
@@ -4845,8 +4845,8 @@ Created at:
 	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:123)
 	io.netty.buffer.AbstractByteBuf.readBytes(AbstractByteBuf.java:879)
 	com.wimetro.acs.common.Message.decode(Message.java:47)
-	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -5285,8 +5285,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 27 common frames omitted
 2022-02-16 16:17:11 ERROR worker-3-1 c.w.a.common.Message 消息体参数个数小于1，解析失败
@@ -5322,8 +5322,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 27 common frames omitted
 2022-02-16 16:17:11 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 客户端/192.168.2.205:48313错误
@@ -5359,8 +5359,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:11 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xa74ea720, L:/192.168.2.147:4070 - R:/192.168.2.205:48313] READ COMPLETE
@@ -5396,8 +5396,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:18 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xa74ea720, L:/192.168.2.147:4070 - R:/192.168.2.205:48313] READ COMPLETE
@@ -5440,8 +5440,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:31 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0x12ef78df, L:/192.168.2.147:4070 - R:/192.168.2.205:48334] READ COMPLETE
@@ -5478,8 +5478,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:31 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0x12ef78df, L:/192.168.2.147:4070 - R:/192.168.2.205:48334] READ COMPLETE
@@ -5515,8 +5515,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:38 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0x12ef78df, L:/192.168.2.147:4070 - R:/192.168.2.205:48334] READ COMPLETE
@@ -5559,8 +5559,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:46 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0xdefb72d3, L:/192.168.2.147:4070 - R:/192.168.2.205:48349] READ COMPLETE
@@ -5597,8 +5597,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:46 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0xdefb72d3, L:/192.168.2.147:4070 - R:/192.168.2.205:48349] READ COMPLETE
@@ -5634,8 +5634,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:17:58 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0xdefb72d3, L:/192.168.2.147:4070 - R:/192.168.2.205:48349] READ COMPLETE
@@ -5678,8 +5678,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:06 INFO  worker-3-4 i.n.h.l.LoggingHandler [id: 0x2bd64195, L:/192.168.2.147:4070 - R:/192.168.2.205:48370] READ COMPLETE
@@ -5715,8 +5715,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:06 INFO  worker-3-4 i.n.h.l.LoggingHandler [id: 0x2bd64195, L:/192.168.2.147:4070 - R:/192.168.2.205:48370] READ COMPLETE
@@ -5752,8 +5752,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:18 INFO  worker-3-4 i.n.h.l.LoggingHandler [id: 0x2bd64195, L:/192.168.2.147:4070 - R:/192.168.2.205:48370] READ COMPLETE
@@ -5796,8 +5796,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:21 INFO  worker-3-5 i.n.h.l.LoggingHandler [id: 0xee4f7e9f, L:/192.168.2.147:4070 - R:/192.168.2.205:48387] READ COMPLETE
@@ -5833,8 +5833,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:21 INFO  worker-3-5 i.n.h.l.LoggingHandler [id: 0xee4f7e9f, L:/192.168.2.147:4070 - R:/192.168.2.205:48387] READ COMPLETE
@@ -5870,8 +5870,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:38 INFO  worker-3-5 i.n.h.l.LoggingHandler [id: 0xee4f7e9f, L:/192.168.2.147:4070 - R:/192.168.2.205:48387] READ COMPLETE
@@ -5914,8 +5914,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:41 INFO  worker-3-6 i.n.h.l.LoggingHandler [id: 0x482ba180, L:/192.168.2.147:4070 - R:/192.168.2.205:48408] READ COMPLETE
@@ -5952,8 +5952,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:41 INFO  worker-3-6 i.n.h.l.LoggingHandler [id: 0x482ba180, L:/192.168.2.147:4070 - R:/192.168.2.205:48408] READ COMPLETE
@@ -6000,8 +6000,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:58 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xaa4d369d, L:/192.168.2.147:4070 - R:/192.168.2.205:48425] READ COMPLETE
@@ -6042,8 +6042,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:58 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xaa4d369d, L:/192.168.2.147:4070 - R:/192.168.2.205:48425] READ COMPLETE
@@ -6085,8 +6085,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:18:58 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xaa4d369d, L:/192.168.2.147:4070 - R:/192.168.2.205:48425] READ COMPLETE
@@ -6134,8 +6134,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:16 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0xb6b38278, L:/192.168.2.147:4070 - R:/192.168.2.205:48444] READ COMPLETE
@@ -6177,8 +6177,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:16 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0xb6b38278, L:/192.168.2.147:4070 - R:/192.168.2.205:48444] READ COMPLETE
@@ -6219,8 +6219,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:18 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0xb6b38278, L:/192.168.2.147:4070 - R:/192.168.2.205:48444] READ COMPLETE
@@ -6268,8 +6268,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:37 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0x6924fd26, L:/192.168.2.147:4070 - R:/192.168.2.205:48465] READ COMPLETE
@@ -6311,8 +6311,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:37 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0x6924fd26, L:/192.168.2.147:4070 - R:/192.168.2.205:48465] READ COMPLETE
@@ -6353,8 +6353,8 @@ Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length
 	at java.base/java.util.ArrayList.get(ArrayList.java:459)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:148)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:38 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0x6924fd26, L:/192.168.2.147:4070 - R:/192.168.2.205:48465] READ COMPLETE
@@ -6374,8 +6374,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6432,8 +6432,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:51 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x521e2bc9, L:/192.168.2.147:4070 - R:/192.168.2.205:48482] READ COMPLETE
@@ -6444,8 +6444,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6502,8 +6502,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:51 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x521e2bc9, L:/192.168.2.147:4070 - R:/192.168.2.205:48482] READ COMPLETE
@@ -6513,8 +6513,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6571,8 +6571,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:19:58 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x521e2bc9, L:/192.168.2.147:4070 - R:/192.168.2.205:48482] READ COMPLETE
@@ -6589,8 +6589,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6647,8 +6647,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:20:12 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0x485a86c7, L:/192.168.2.147:4070 - R:/192.168.2.205:48503] READ COMPLETE
@@ -6659,8 +6659,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6717,8 +6717,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:20:12 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0x485a86c7, L:/192.168.2.147:4070 - R:/192.168.2.205:48503] READ COMPLETE
@@ -6728,8 +6728,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6786,8 +6786,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:20:18 INFO  worker-3-2 i.n.h.l.LoggingHandler [id: 0x485a86c7, L:/192.168.2.147:4070 - R:/192.168.2.205:48503] READ COMPLETE
@@ -6804,8 +6804,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6862,8 +6862,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:20:26 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0x1f4b6183, L:/192.168.2.147:4070 - R:/192.168.2.205:48518] READ COMPLETE
@@ -6874,8 +6874,8 @@ java.lang.NoSuchMethodException: com.wimetro.acs.util.ProtocolFiledUtil.FieldPar
 	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2475)
 	at com.wimetro.acs.common.Message.decodeMsgBody(Message.java:153)
 	at com.wimetro.acs.common.Message.decode(Message.java:107)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
@@ -6932,8 +6932,8 @@ io.netty.handler.codec.DecoderException: java.lang.NullPointerException
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: java.lang.NullPointerException: null
 	at com.wimetro.acs.common.Message.decode(Message.java:113)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:27)
-	at com.wimetro.acs.server.codec.ProtocolDecoder.decode(ProtocolDecoder.java:18)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	at com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
 	... 25 common frames omitted
 2022-02-16 16:20:27 INFO  worker-3-3 i.n.h.l.LoggingHandler [id: 0x1f4b6183, L:/192.168.2.147:4070 - R:/192.168.2.205:48518] READ COMPLETE

@@ -1,0 +1,32 @@
+2022-02-24 22:01:12 ERROR main o.s.b.SpringApplication Application run failed
+java.lang.UnsatisfiedLinkError: failed to load the required native library
+	at io.netty.channel.epoll.Epoll.ensureAvailability(Epoll.java:80)
+	at io.netty.channel.epoll.EpollEventLoop.<clinit>(EpollEventLoop.java:53)
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:143)
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:36)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:105)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:92)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:69)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:53)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:46)
+	at com.wimetro.acs.server.runner.TwoPortNettyServer.start(TwoPortNettyServer.java:68)
+	at com.wimetro.acs.server.runner.TwoPortNettyServer.run(TwoPortNettyServer.java:124)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.wimetro.acs.GatewayApplication.main(GatewayApplication.java:10)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Only supported on Linux
+	at io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:180)
+	at io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	... 21 common frames omitted
+2022-02-24 22:54:13 ERROR nioEventLoopGroup-3-2 c.w.a.s.h.KeepaliveHandler /127.0.0.1:63228 -> [异常]原因：null
+2022-02-24 22:54:18 ERROR nioEventLoopGroup-3-1 c.w.a.s.h.KeepaliveHandler /127.0.0.1:63225 -> [异常]原因：null

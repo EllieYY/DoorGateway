@@ -1,9 +1,8 @@
 package com.wimetro.acs.server.runner;
 
-import com.wimetro.acs.server.codec.FrameDecoder;
-import com.wimetro.acs.server.codec.ProtocolDecoder;
-import com.wimetro.acs.server.codec.ProtocolEncoder;
-import com.wimetro.acs.server.handler.KeepaliveHandler;
+import com.wimetro.acs.server.codec.DeviceFrameDecoder;
+import com.wimetro.acs.server.codec.DeviceProtocolDecoder;
+import com.wimetro.acs.server.codec.DeviceProtocolEncoder;
 import com.wimetro.acs.server.handler.ServerProcessHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -24,7 +23,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
-import org.springframework.stereotype.Component;
 
 /**
  * @title: Server
@@ -33,7 +31,7 @@ import org.springframework.stereotype.Component;
  * @description:
  **/
 @Slf4j
-@Component
+//@Component
 public class NettyServerRunner implements ApplicationRunner, ApplicationListener<ContextClosedEvent>, ApplicationContextAware {
 
     @Value("${netty.tcp.port}")
@@ -75,15 +73,15 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
                     pipeline.addLast("idleHandler",
                             new IdleStateHandler(20, 0, 0));
 
-                    pipeline.addLast("frameDecoder", new FrameDecoder());
-                    pipeline.addLast("protocolDecoder", new ProtocolDecoder());
-                    pipeline.addLast("protocolEncoder", new ProtocolEncoder());
+                    pipeline.addLast("frameDecoder", new DeviceFrameDecoder());
+                    pipeline.addLast("protocolDecoder", new DeviceProtocolDecoder(""));
+                    pipeline.addLast("protocolEncoder", new DeviceProtocolEncoder());
 
-//                    pipeline.addLast("infolog", infoLogHandler);
+                    pipeline.addLast("infolog", infoLogHandler);
 
                     pipeline.addLast(businessGroup, new ServerProcessHandler());
 
-                    pipeline.addLast("keepalive", new KeepaliveHandler());
+//                    pipeline.addLast("keepalive", new KeepaliveHandler());
                 }
             });
 

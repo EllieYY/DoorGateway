@@ -1,0 +1,446 @@
+2022-02-18 08:33:37 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 28960 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 08:33:37 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 08:33:39 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 08:33:39 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 08:33:39 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 08:33:39 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 08:33:39 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 08:33:39 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2167 ms
+2022-02-18 08:33:40 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 08:33:40 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 08:33:40 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 4.602 seconds (JVM running for 6.949)
+2022-02-18 08:33:47 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53549 -> [连接成功]
+2022-02-18 08:33:47 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:33:47 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:34:01 GMT 02/18/2022;)
+2022-02-18 08:33:47 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=3954,CommonOperation(context=1060;001834;7;20;7;24;200;10:53:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001835;7;20;7;24;200;11:03:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001836;7;20;7;24;200;11:13:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001837;7;20;7;24;200;11:23:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001838;7;20;7;24;200;11:33:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001839;7;20;7;24;200;11:43:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001840;7;20;7;24;200;11:53:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001841;7;20;7;24;200;12:03:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001842;7;20;7;24;200;12:13:29 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001843;7;20;7;24;200;12:23:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001844;7;20;7;24;200;12:33:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001845;7;20;7;24;200;12:43:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001846;7;20;7;24;200;12:53:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001847;7;20;7;24;200;13:03:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001848;7;20;7;24;200;13:13:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001849;7;20;7;24;200;13:23:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001850;7;20;7;24;200;13:33:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001851;7;20;7;24;200;13:43:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001852;7;20;7;24;200;13:53:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001853;7;20;7;24;200;14:03:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001854;7;20;7;24;200;14:13:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001855;7;20;7;24;200;14:23:30 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001856;7;20;7;24;200;14:33:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001857;7;20;7;24;200;14:43:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001858;7;20;7;24;200;14:53:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001859;7;20;7;24;200;15:03:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001860;7;20;7;24;200;15:13:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001861;7;20;7;24;200;15:23:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001862;7;20;7;24;200;15:33:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001863;7;20;7;24;200;15:43:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001864;7;20;7;24;200;15:53:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001865;7;20;7;24;200;16:03:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001866;7;20;7;24;200;16:13:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001867;7;20;7;24;200;16:23:31 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001868;7;20;7;24;200;16:33:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001869;7;20;7;24;200;16:43:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001870;7;20;7;24;200;16:53:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001871;7;20;7;24;200;17:03:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001872;7;20;7;24;200;17:13:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001873;7;20;7;24;200;17:23:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001874;7;20;7;24;200;17:33:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001875;7;20;7;24;200;17:43:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001876;7;20;7;24;200;17:53:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001877;7;20;7;24;200;18:03:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001878;7;20;7;24;200;18:13:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001879;7;20;7;24;200;18:23:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001880;7;20;7;24;200;18:33:32 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001881;7;20;7;24;200;18:43:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001882;7;20;7;24;200;18:53:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001883;7;20;7;24;200;19:03:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001884;7;20;7;24;200;19:13:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001885;7;20;7;24;200;19:23:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001886;7;20;7;24;200;19:33:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001887;7;20;7;24;200;19:43:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001888;7;20;7;24;200;19:53:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001889;7;20;7;24;200;20:03:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001890;7;20;7;24;200;20:13:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001891;7;20;7;24;200;20:23:33 GMT 02/17/2022;00:06:8E:02:CE:15^)
+2022-02-18 08:33:47 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:33:47 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:33:47 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 08:33:48 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=3954,CommonOperation(context=1060;001892;7;20;7;24;200;20:33:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001893;7;20;7;24;200;20:43:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001894;7;20;7;24;200;20:53:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001895;7;20;7;24;200;21:03:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001896;7;20;7;24;200;21:13:33 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001897;7;20;7;24;200;21:23:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001898;7;20;7;24;200;21:33:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001899;7;20;7;24;200;21:43:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001900;7;20;7;24;200;21:53:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001901;7;20;7;24;200;22:03:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001902;7;20;7;24;200;22:13:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001903;7;20;7;24;200;22:23:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001904;7;20;7;24;200;22:33:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001905;7;20;7;24;200;22:43:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001906;7;20;7;24;200;22:53:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001907;7;20;7;24;200;23:03:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001908;7;20;7;24;200;23:13:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001909;7;20;7;24;200;23:23:34 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001910;7;20;7;24;200;23:33:35 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001911;7;20;7;24;200;23:43:35 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001912;7;20;7;24;200;23:53:35 GMT 02/17/2022;00:06:8E:02:CE:15^1060;001913;7;20;7;24;200;00:03:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001914;7;20;7;24;200;00:13:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001915;7;20;7;24;200;00:23:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001916;7;20;7;24;200;00:33:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001917;7;20;7;24;200;00:43:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001918;7;20;7;24;200;00:53:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001919;7;20;7;24;200;01:03:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001920;7;20;7;24;200;01:13:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001921;7;20;7;24;200;01:23:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001922;7;20;7;24;200;01:33:35 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001923;7;20;7;24;200;01:43:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001924;7;20;7;24;200;01:53:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001925;7;20;7;24;200;02:03:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001926;7;20;7;24;200;02:13:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001927;7;20;7;24;200;02:23:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001928;7;20;7;24;200;02:33:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001929;7;20;7;24;200;02:43:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001930;7;20;7;24;200;02:53:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001931;7;20;7;24;200;03:03:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001932;7;20;7;24;200;03:13:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001933;7;20;7;24;200;03:23:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001934;7;20;7;24;200;03:33:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001935;7;20;7;24;200;03:43:36 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001936;7;20;7;24;200;03:53:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001937;7;20;7;24;200;04:03:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001938;7;20;7;24;200;04:13:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001939;7;20;7;24;200;04:23:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001940;7;20;7;24;200;04:33:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001941;7;20;7;24;200;04:43:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001942;7;20;7;24;200;04:53:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001943;7;20;7;24;200;05:03:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001944;7;20;7;24;200;05:13:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001945;7;20;7;24;200;05:23:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001946;7;20;7;24;200;05:33:37 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001947;7;20;7;24;200;05:43:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001948;7;20;7;24;200;05:53:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001949;7;20;7;24;200;06:03:38 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 08:33:48 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 08:33:48 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=1030,CommonOperation(context=1060;001950;7;20;7;24;200;06:13:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001951;7;20;7;24;200;06:23:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001952;7;20;7;24;200;06:33:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001953;7;20;7;24;200;06:43:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001954;7;20;7;24;200;06:53:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001955;7;20;7;24;200;07:03:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001956;7;20;7;24;200;07:13:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001957;7;20;7;24;200;07:23:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001958;7;20;7;24;200;07:33:38 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001959;7;20;7;24;200;07:43:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001960;7;20;7;24;200;07:53:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001961;7;20;7;24;200;08:03:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001962;7;20;7;24;200;08:13:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001963;7;20;7;24;200;08:23:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001964;7;20;7;24;200;08:33:39 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 08:33:48 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 08:34:07 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:34:21 GMT 02/18/2022;)
+2022-02-18 08:34:07 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:34:27 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:34:41 GMT 02/18/2022;)
+2022-02-18 08:34:27 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:34:27 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53549 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:34:27 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53549 -> [断开连接]
+2022-02-18 08:34:47 INFO  business-4-7 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53610 -> [连接成功]
+2022-02-18 08:34:47 INFO  worker-3-2 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:34:47 INFO  worker-3-2 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:34:47 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:35:01 GMT 02/18/2022;)
+2022-02-18 08:34:47 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:35:07 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:35:21 GMT 02/18/2022;)
+2022-02-18 08:35:07 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:35:27 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:35:41 GMT 02/18/2022;)
+2022-02-18 08:35:27 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:35:27 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53610 -> [断开连接]
+2022-02-18 08:35:27 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53610 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:35:47 INFO  business-4-7 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53671 -> [连接成功]
+2022-02-18 08:35:47 INFO  worker-3-3 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:35:47 INFO  worker-3-3 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:35:47 INFO  worker-3-3 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:36:01 GMT 02/18/2022;)
+2022-02-18 08:35:47 INFO  worker-3-3 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:36:07 INFO  worker-3-3 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:36:21 GMT 02/18/2022;)
+2022-02-18 08:36:07 INFO  worker-3-3 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:36:07 INFO  business-4-6 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53671 -> [断开连接]
+2022-02-18 08:36:07 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:53671 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:36:27 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41218 -> [连接成功]
+2022-02-18 08:36:27 INFO  worker-3-4 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:36:27 INFO  worker-3-4 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:36:27 INFO  worker-3-4 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:36:41 GMT 02/18/2022;)
+2022-02-18 08:36:27 INFO  worker-3-4 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:36:47 INFO  worker-3-4 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:37:01 GMT 02/18/2022;)
+2022-02-18 08:36:47 INFO  worker-3-4 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:37:07 INFO  worker-3-4 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:37:21 GMT 02/18/2022;)
+2022-02-18 08:37:07 INFO  worker-3-4 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:37:07 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41218 -> [断开连接]
+2022-02-18 08:37:07 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41218 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:37:27 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41279 -> [连接成功]
+2022-02-18 08:37:27 INFO  worker-3-5 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:37:27 INFO  worker-3-5 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:37:27 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:37:41 GMT 02/18/2022;)
+2022-02-18 08:37:27 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:37:47 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:38:01 GMT 02/18/2022;)
+2022-02-18 08:37:47 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:38:07 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:38:21 GMT 02/18/2022;)
+2022-02-18 08:38:07 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:38:07 INFO  business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41279 -> [断开连接]
+2022-02-18 08:38:07 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41279 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:38:27 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41340 -> [连接成功]
+2022-02-18 08:38:27 INFO  worker-3-6 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:38:27 INFO  worker-3-6 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:38:27 INFO  worker-3-6 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:38:41 GMT 02/18/2022;)
+2022-02-18 08:38:27 INFO  worker-3-6 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:38:47 INFO  worker-3-6 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:39:01 GMT 02/18/2022;)
+2022-02-18 08:38:47 INFO  worker-3-6 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:39:07 INFO  worker-3-6 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:39:21 GMT 02/18/2022;)
+2022-02-18 08:39:07 INFO  worker-3-6 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:39:27 INFO  worker-3-6 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:39:41 GMT 02/18/2022;)
+2022-02-18 08:39:27 INFO  worker-3-6 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:39:47 INFO  worker-3-6 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:40:01 GMT 02/18/2022;)
+2022-02-18 08:39:47 INFO  worker-3-6 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:39:47 INFO  business-4-6 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41340 -> [断开连接]
+2022-02-18 08:39:47 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41340 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:40:07 INFO  business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41441 -> [连接成功]
+2022-02-18 08:40:07 INFO  worker-3-7 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:40:07 INFO  worker-3-7 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:40:07 INFO  worker-3-7 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:40:21 GMT 02/18/2022;)
+2022-02-18 08:40:07 INFO  worker-3-7 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:40:27 INFO  worker-3-7 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:40:41 GMT 02/18/2022;)
+2022-02-18 08:40:27 INFO  worker-3-7 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:40:47 INFO  worker-3-7 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:41:01 GMT 02/18/2022;)
+2022-02-18 08:40:47 INFO  worker-3-7 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:40:47 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41441 -> [断开连接]
+2022-02-18 08:40:47 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41441 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 08:41:07 INFO  business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41502 -> [连接成功]
+2022-02-18 08:41:07 INFO  worker-3-8 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 08:41:07 INFO  worker-3-8 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 08:41:07 INFO  worker-3-8 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:41:21 GMT 02/18/2022;)
+2022-02-18 08:41:07 INFO  worker-3-8 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 08:41:27 INFO  worker-3-8 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;08:41:41 GMT 02/18/2022;)
+2022-02-18 08:41:27 INFO  worker-3-8 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 10:09:21 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 13552 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 10:09:21 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 10:09:24 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 10:09:24 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 10:09:24 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 10:09:24 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 10:09:24 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 10:09:24 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2801 ms
+2022-02-18 10:09:25 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 10:09:25 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 10:09:25 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 6.031 seconds (JVM running for 10.801)
+2022-02-18 10:09:39 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:59722 -> [连接成功]
+2022-02-18 10:09:39 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 10:09:39 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;10:09:45 GMT 02/18/2022;)
+2022-02-18 10:09:39 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=0418,CommonOperation(context=1060;001968;7;20;7;24;200;09:13:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001969;7;20;7;24;200;09:23:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001970;7;20;7;24;200;09:33:39 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001971;7;20;7;24;200;09:43:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001972;7;20;7;24;200;09:53:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001973;7;20;7;24;200;10:03:40 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 10:09:39 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 10:09:39 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 10:09:39 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 10:09:52 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;10:10:05 GMT 02/18/2022;)
+2022-02-18 10:09:52 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:14:00 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 18640 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 14:14:00 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 14:14:01 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 14:14:01 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 14:14:01 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 14:14:01 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 14:14:02 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 14:14:02 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1297 ms
+2022-02-18 14:14:02 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 14:14:02 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 14:14:02 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.453 seconds (JVM running for 3.987)
+2022-02-18 14:14:05 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50865 -> [连接成功]
+2022-02-18 14:14:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 14:14:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:14:17 GMT 02/18/2022;)
+2022-02-18 14:14:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=1710,CommonOperation(context=1060;001974;7;20;7;24;200;10:13:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001975;7;20;7;24;200;10:23:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001976;7;20;7;24;200;10:33:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001977;7;20;7;24;200;10:43:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001978;7;20;7;24;200;10:53:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001979;7;20;7;24;200;11:03:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001980;7;20;7;24;200;11:13:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001981;7;20;7;24;200;11:23:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001982;7;20;7;24;200;11:33:40 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001983;7;20;7;24;200;11:43:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001984;7;20;7;24;200;11:53:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001985;7;20;7;24;200;12:03:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001986;7;20;7;24;200;12:13:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001987;7;20;7;24;200;12:23:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001988;7;20;7;24;200;12:33:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001989;7;20;7;24;200;12:43:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001990;7;20;7;24;200;12:53:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001991;7;20;7;24;200;13:03:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001992;7;20;7;24;200;13:13:41 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001993;7;20;7;24;200;13:23:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001994;7;20;7;24;200;13:33:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001995;7;20;7;24;200;13:43:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001996;7;20;7;24;200;13:53:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001997;7;20;7;24;200;14:03:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;001998;7;20;7;24;200;14:13:42 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 14:14:05 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:14:05 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 14:14:05 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 14:14:25 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:14:37 GMT 02/18/2022;)
+2022-02-18 14:14:25 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:14:45 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:14:57 GMT 02/18/2022;)
+2022-02-18 14:14:45 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:14:45 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50865 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:14:45 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50865 -> [断开连接]
+2022-02-18 14:15:05 INFO  business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50926 -> [连接成功]
+2022-02-18 14:15:05 INFO  worker-3-2 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 14:15:05 INFO  worker-3-2 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 14:15:05 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:15:17 GMT 02/18/2022;)
+2022-02-18 14:15:05 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:15:25 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:15:37 GMT 02/18/2022;)
+2022-02-18 14:15:25 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:15:45 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:15:57 GMT 02/18/2022;)
+2022-02-18 14:15:45 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:16:05 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:16:17 GMT 02/18/2022;)
+2022-02-18 14:16:05 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:16:05 INFO  business-4-4 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50926 -> [断开连接]
+2022-02-18 14:16:05 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:50926 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:16:47 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 21572 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 14:16:47 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 14:16:48 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 14:16:48 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 14:16:48 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 14:16:48 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 14:16:48 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 14:16:48 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 756 ms
+2022-02-18 14:16:48 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 14:16:48 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 14:16:48 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.444 seconds (JVM running for 2.458)
+2022-02-18 14:17:05 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39068 -> [连接成功]
+2022-02-18 14:17:05 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1042;0028;00:06:8E:02:CE:15;
+2022-02-18 14:17:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 14:17:05 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:17:17 GMT 02/18/2022;
+2022-02-18 14:17:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:17:17 GMT 02/18/2022;)
+2022-02-18 14:17:05 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 14:17:05 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:17:25 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:17:37 GMT 02/18/2022;
+2022-02-18 14:17:25 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:17:37 GMT 02/18/2022;)
+2022-02-18 14:17:25 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:17:25 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39068 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:17:25 INFO  business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39068 -> [断开连接]
+2022-02-18 14:17:45 INFO  business-4-6 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39109 -> [连接成功]
+2022-02-18 14:17:45 INFO  worker-3-2 c.w.a.s.c.ProtocolDecoder 接收消息：1042;0028;00:06:8E:02:CE:15;
+2022-02-18 14:17:45 INFO  worker-3-2 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 14:17:45 INFO  worker-3-2 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 14:17:45 INFO  worker-3-2 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:17:57 GMT 02/18/2022;
+2022-02-18 14:17:45 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:17:57 GMT 02/18/2022;)
+2022-02-18 14:17:45 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:18:05 INFO  worker-3-2 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:18:17 GMT 02/18/2022;
+2022-02-18 14:18:05 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:18:17 GMT 02/18/2022;)
+2022-02-18 14:18:05 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:18:25 INFO  worker-3-2 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:18:37 GMT 02/18/2022;
+2022-02-18 14:18:25 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:18:37 GMT 02/18/2022;)
+2022-02-18 14:18:25 INFO  worker-3-2 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:18:25 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39109 -> [断开连接]
+2022-02-18 14:18:25 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39109 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-18 14:18:45 INFO  business-4-6 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39170 -> [连接成功]
+2022-02-18 14:18:45 INFO  worker-3-3 c.w.a.s.c.ProtocolDecoder 接收消息：1042;0028;00:06:8E:02:CE:15;
+2022-02-18 14:18:45 INFO  worker-3-3 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 14:18:45 INFO  worker-3-3 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 14:18:45 INFO  worker-3-3 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:18:57 GMT 02/18/2022;
+2022-02-18 14:18:45 INFO  worker-3-3 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:18:57 GMT 02/18/2022;)
+2022-02-18 14:18:45 INFO  worker-3-3 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:18:55 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 20812 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 14:18:55 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 14:18:56 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 14:18:56 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 14:18:56 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 14:18:56 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 14:18:56 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 14:18:56 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 686 ms
+2022-02-18 14:18:56 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 14:18:56 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 14:18:56 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.466 seconds (JVM running for 2.525)
+2022-02-18 14:19:05 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39191 -> [连接成功]
+2022-02-18 14:19:05 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1042;0028;00:06:8E:02:CE:15;
+2022-02-18 14:19:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 14:19:05 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:19:17 GMT 02/18/2022;
+2022-02-18 14:19:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:19:17 GMT 02/18/2022;)
+2022-02-18 14:19:05 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:19:05 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 14:19:25 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:19:37 GMT 02/18/2022;
+2022-02-18 14:19:25 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:19:37 GMT 02/18/2022;)
+2022-02-18 14:19:25 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:19:45 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:19:57 GMT 02/18/2022;
+2022-02-18 14:19:45 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:19:57 GMT 02/18/2022;)
+2022-02-18 14:19:45 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:20:05 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:20:17 GMT 02/18/2022;
+2022-02-18 14:20:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:20:17 GMT 02/18/2022;)
+2022-02-18 14:20:05 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 14:20:25 INFO  worker-3-1 c.w.a.s.c.ProtocolDecoder 接收消息：1080;0091;V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:20:37 GMT 02/18/2022;
+2022-02-18 14:20:25 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;14:20:37 GMT 02/18/2022;)
+2022-02-18 14:20:25 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:35:49 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 22176 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 16:35:49 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 16:35:50 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 16:35:50 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 16:35:50 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 16:35:50 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 16:35:50 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 16:35:50 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 770 ms
+2022-02-18 16:35:50 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 16:35:50 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 16:35:50 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.653 seconds (JVM running for 2.732)
+2022-02-18 16:36:02 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:47618 -> [连接成功]
+2022-02-18 16:36:03 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 16:36:03 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:36:03 GMT 02/18/2022;)
+2022-02-18 16:36:03 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=0962,CommonOperation(context=1060;001999;7;20;7;24;200;14:23:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002000;7;20;7;24;200;14:33:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002001;7;20;7;24;200;14:43:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002002;7;20;7;24;200;14:53:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002003;7;20;7;24;200;15:03:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002004;7;20;7;24;200;15:13:42 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002005;7;20;7;24;200;15:23:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002006;7;20;7;24;200;15:33:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002007;7;20;7;24;200;15:43:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002008;7;20;7;24;200;15:53:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002009;7;20;7;24;200;16:03:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002010;7;20;7;24;200;16:13:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002011;7;20;7;24;200;16:23:43 GMT 02/18/2022;00:06:8E:02:CE:15^1060;002012;7;20;7;24;200;16:33:43 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 16:36:03 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 16:36:03 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:36:03 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 16:36:12 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:36:23 GMT 02/18/2022;)
+2022-02-18 16:36:12 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:36:32 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:36:43 GMT 02/18/2022;)
+2022-02-18 16:36:32 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:36:52 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:37:03 GMT 02/18/2022;)
+2022-02-18 16:36:52 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:37:12 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:37:23 GMT 02/18/2022;)
+2022-02-18 16:37:12 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:37:32 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:37:43 GMT 02/18/2022;)
+2022-02-18 16:37:32 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:37:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:38:03 GMT 02/18/2022;)
+2022-02-18 16:37:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:38:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:38:23 GMT 02/18/2022;)
+2022-02-18 16:38:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:38:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:38:43 GMT 02/18/2022;)
+2022-02-18 16:38:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:38:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:39:03 GMT 02/18/2022;)
+2022-02-18 16:38:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:39:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:39:23 GMT 02/18/2022;)
+2022-02-18 16:39:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:39:33 ERROR worker-3-1 i.n.u.ResourceLeakDetector LEAK: ByteBuf.release() was not called before it's garbage-collected. See https://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:349)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:187)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:123)
+	io.netty.buffer.AbstractByteBuf.readBytes(AbstractByteBuf.java:879)
+	com.wimetro.acs.common.Message.decode(Message.java:94)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:27)
+	com.wimetro.acs.server.codec.DeviceProtocolDecoder.decode(ProtocolDecoder.java:18)
+	io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:88)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1421)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:697)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:632)
+	io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:549)
+	io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:511)
+	io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-18 16:39:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:39:43 GMT 02/18/2022;)
+2022-02-18 16:39:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:39:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:40:03 GMT 02/18/2022;)
+2022-02-18 16:39:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:40:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:40:23 GMT 02/18/2022;)
+2022-02-18 16:40:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:40:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:40:43 GMT 02/18/2022;)
+2022-02-18 16:40:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:40:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:41:03 GMT 02/18/2022;)
+2022-02-18 16:40:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:41:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:41:23 GMT 02/18/2022;)
+2022-02-18 16:41:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:41:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:41:44 GMT 02/18/2022;)
+2022-02-18 16:41:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:41:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:42:04 GMT 02/18/2022;)
+2022-02-18 16:41:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:42:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:42:24 GMT 02/18/2022;)
+2022-02-18 16:42:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:42:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:42:44 GMT 02/18/2022;)
+2022-02-18 16:42:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:42:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:43:04 GMT 02/18/2022;)
+2022-02-18 16:42:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:43:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:43:24 GMT 02/18/2022;)
+2022-02-18 16:43:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:43:32 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=0078,CommonOperation(context=1060;002013;7;20;7;24;200;16:43:43 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 16:43:32 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 16:43:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:43:44 GMT 02/18/2022;)
+2022-02-18 16:43:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:43:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:44:04 GMT 02/18/2022;)
+2022-02-18 16:43:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:44:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:44:24 GMT 02/18/2022;)
+2022-02-18 16:44:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:44:31 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 20000 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 16:44:31 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 16:44:32 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 16:44:32 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 16:44:32 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 16:44:32 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 16:44:32 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 16:44:32 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1162 ms
+2022-02-18 16:44:32 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 16:44:32 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 16:44:32 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.385 seconds (JVM running for 4.25)
+2022-02-18 16:44:53 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:49416 -> [连接成功]
+2022-02-18 16:44:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-18 16:44:53 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-18 16:44:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:45:04 GMT 02/18/2022;)
+2022-02-18 16:44:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:45:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:45:24 GMT 02/18/2022;)
+2022-02-18 16:45:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:45:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:45:44 GMT 02/18/2022;)
+2022-02-18 16:45:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:45:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:46:04 GMT 02/18/2022;)
+2022-02-18 16:45:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:46:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:46:24 GMT 02/18/2022;)
+2022-02-18 16:46:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:46:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:46:44 GMT 02/18/2022;)
+2022-02-18 16:46:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:46:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:47:04 GMT 02/18/2022;)
+2022-02-18 16:46:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:47:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:47:24 GMT 02/18/2022;)
+2022-02-18 16:47:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:47:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:47:44 GMT 02/18/2022;)
+2022-02-18 16:47:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:47:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:48:04 GMT 02/18/2022;)
+2022-02-18 16:47:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:48:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:48:24 GMT 02/18/2022;)
+2022-02-18 16:48:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:48:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:48:44 GMT 02/18/2022;)
+2022-02-18 16:48:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:48:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:49:04 GMT 02/18/2022;)
+2022-02-18 16:48:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:49:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:49:24 GMT 02/18/2022;)
+2022-02-18 16:49:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:49:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:49:44 GMT 02/18/2022;)
+2022-02-18 16:49:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:49:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:50:04 GMT 02/18/2022;)
+2022-02-18 16:49:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:50:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:50:24 GMT 02/18/2022;)
+2022-02-18 16:50:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:50:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:50:44 GMT 02/18/2022;)
+2022-02-18 16:50:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:50:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:51:04 GMT 02/18/2022;)
+2022-02-18 16:50:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:51:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:51:24 GMT 02/18/2022;)
+2022-02-18 16:51:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:51:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:51:44 GMT 02/18/2022;)
+2022-02-18 16:51:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:51:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:52:04 GMT 02/18/2022;)
+2022-02-18 16:51:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:52:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:52:24 GMT 02/18/2022;)
+2022-02-18 16:52:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:52:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:52:44 GMT 02/18/2022;)
+2022-02-18 16:52:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:52:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:53:04 GMT 02/18/2022;)
+2022-02-18 16:52:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:53:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:53:24 GMT 02/18/2022;)
+2022-02-18 16:53:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:53:32 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=0078,CommonOperation(context=1060;002014;7;20;7;24;200;16:53:43 GMT 02/18/2022;00:06:8E:02:CE:15^)
+2022-02-18 16:53:32 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-18 16:53:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:53:44 GMT 02/18/2022;)
+2022-02-18 16:53:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:53:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:54:04 GMT 02/18/2022;)
+2022-02-18 16:53:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:54:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:54:24 GMT 02/18/2022;)
+2022-02-18 16:54:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:54:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:54:44 GMT 02/18/2022;)
+2022-02-18 16:54:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:54:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:55:04 GMT 02/18/2022;)
+2022-02-18 16:54:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:55:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:55:24 GMT 02/18/2022;)
+2022-02-18 16:55:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:55:33 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:55:44 GMT 02/18/2022;)
+2022-02-18 16:55:33 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:55:53 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:56:04 GMT 02/18/2022;)
+2022-02-18 16:55:53 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:56:13 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:56:24 GMT 02/18/2022;)
+2022-02-18 16:56:13 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:56:34 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:56:44 GMT 02/18/2022;)
+2022-02-18 16:56:34 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:56:54 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:57:04 GMT 02/18/2022;)
+2022-02-18 16:56:54 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:57:14 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:57:24 GMT 02/18/2022;)
+2022-02-18 16:57:14 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:57:34 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;16:57:44 GMT 02/18/2022;)
+2022-02-18 16:57:34 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-18 16:57:45 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 17512 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-18 16:57:45 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-18 16:57:46 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-18 16:57:46 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-18 16:57:46 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-18 16:57:46 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 16:57:46 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-18 16:57:46 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1197 ms
+2022-02-18 16:57:46 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-18 16:57:46 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-18 16:57:46 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.199 seconds (JVM running for 3.286)

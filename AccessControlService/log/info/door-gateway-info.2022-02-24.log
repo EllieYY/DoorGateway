@@ -1,0 +1,944 @@
+2022-02-24 08:06:30 INFO  business-4-6 c.w.a.s.h.ServerProcessHandler 192.168.2.205:51773 -> [连接成功]
+2022-02-24 08:06:30 INFO  worker-3-5 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-24 08:06:30 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:06:30 INFO  worker-3-5 c.w.a.common.Message [encode]0070;0010;
+2022-02-24 08:06:30 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:06:30 INFO  worker-3-5 c.w.a.common.Message [decode]type=1065,length=3954,CommonOperation(context=1060;002724;7;20;7;24;200;15:14:37 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002725;7;20;7;24;200;15:24:37 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002726;7;20;7;24;200;15:34:37 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002727;7;20;7;24;200;15:44:37 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002728;7;20;7;24;200;15:54:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002729;7;20;7;24;200;16:04:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002730;7;20;7;24;200;16:14:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002731;7;20;7;24;200;16:24:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002732;7;20;7;24;200;16:34:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002733;7;20;7;24;200;16:44:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002734;7;20;7;24;200;16:54:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002735;7;20;7;24;200;17:04:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002736;7;20;7;24;200;17:14:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002737;7;20;7;24;200;17:24:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002738;7;20;7;24;200;17:34:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002739;7;20;7;24;200;17:44:38 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002740;7;20;7;24;200;17:54:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002741;7;20;7;24;200;18:04:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002742;7;20;7;24;200;18:14:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002743;7;20;7;24;200;18:24:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002744;7;20;7;24;200;18:34:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002745;7;20;7;24;200;18:44:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002746;7;20;7;24;200;18:54:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002747;7;20;7;24;200;19:04:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002748;7;20;7;24;200;19:14:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002749;7;20;7;24;200;19:24:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002750;7;20;7;24;200;19:34:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002751;7;20;7;24;200;19:44:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002752;7;20;7;24;200;19:54:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002753;7;20;7;24;200;20:04:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002754;7;20;7;24;200;20:14:39 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002755;7;20;7;24;200;20:24:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002756;7;20;7;24;200;20:34:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002757;7;20;7;24;200;20:44:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002758;7;20;7;24;200;20:54:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002759;7;20;7;24;200;21:04:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002760;7;20;7;24;200;21:14:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002761;7;20;7;24;200;21:24:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002762;7;20;7;24;200;21:34:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002763;7;20;7;24;200;21:44:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002764;7;20;7;24;200;21:54:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002765;7;20;7;24;200;22:04:40 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002766;7;20;7;24;200;22:14:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002767;7;20;7;24;200;22:24:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002768;7;20;7;24;200;22:34:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002769;7;20;7;24;200;22:44:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002770;7;20;7;24;200;22:54:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002771;7;20;7;24;200;23:04:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002772;7;20;7;24;200;23:14:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002773;7;20;7;24;200;23:24:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002774;7;20;7;24;200;23:34:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002775;7;20;7;24;200;23:44:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002776;7;20;7;24;200;23:54:41 GMT 02/23/2022;00:06:8E:02:CE:15^1060;002777;7;20;7;24;200;00:04:41 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002778;7;20;7;24;200;00:14:41 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002779;7;20;7;24;200;00:24:41 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002780;7;20;7;24;200;00:34:41 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002781;7;20;7;24;200;00:44:42 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 08:06:30 INFO  worker-3-5 c.w.a.common.Message [encode]0067;0010;
+2022-02-24 08:06:31 INFO  worker-3-5 c.w.a.common.Message [decode]type=1065,length=3002,CommonOperation(context=1060;002782;7;20;7;24;200;00:54:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002783;7;20;7;24;200;01:04:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002784;7;20;7;24;200;01:14:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002785;7;20;7;24;200;01:24:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002786;7;20;7;24;200;01:34:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002787;7;20;7;24;200;01:44:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002788;7;20;7;24;200;01:54:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002789;7;20;7;24;200;02:04:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002790;7;20;7;24;200;02:14:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002791;7;20;7;24;200;02:24:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002792;7;20;7;24;200;02:34:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002793;7;20;7;24;200;02:44:42 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002794;7;20;7;24;200;02:54:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002795;7;20;7;24;200;03:04:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002796;7;20;7;24;200;03:14:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002797;7;20;7;24;200;03:24:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002798;7;20;7;24;200;03:34:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002799;7;20;7;24;200;03:44:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002800;7;20;7;24;200;03:54:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002801;7;20;7;24;200;04:04:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002802;7;20;7;24;200;04:14:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002803;7;20;7;24;200;04:24:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002804;7;20;7;24;200;04:34:43 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002805;7;20;7;24;200;04:44:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002806;7;20;7;24;200;04:54:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002807;7;20;7;24;200;05:04:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002808;7;20;7;24;200;05:14:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002809;7;20;7;24;200;05:24:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002810;7;20;7;24;200;05:34:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002811;7;20;7;24;200;05:44:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002812;7;20;7;24;200;05:54:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002813;7;20;7;24;200;06:04:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002814;7;20;7;24;200;06:14:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002815;7;20;7;24;200;06:24:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002816;7;20;7;24;200;06:34:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002817;7;20;7;24;200;06:44:44 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002818;7;20;7;24;200;06:54:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002819;7;20;7;24;200;07:04:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002820;7;20;7;24;200;07:14:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002821;7;20;7;24;200;07:24:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002822;7;20;7;24;200;07:34:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002823;7;20;7;24;200;07:44:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002824;7;20;7;24;200;07:54:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002825;7;20;7;24;200;08:04:45 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 08:06:31 INFO  worker-3-5 c.w.a.common.Message [encode]0067;0010;
+2022-02-24 08:06:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:06:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:06:59 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:06:59 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:07:19 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:07:19 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:07:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:07:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:07:59 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:07:59 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:08:19 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:08:19 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:08:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:08:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:08:59 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:08:59 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:09:19 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:09:19 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:09:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:09:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:09:59 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:09:59 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:10:19 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:10:19 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:10:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:10:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:10:59 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:10:59 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:11:19 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:11:19 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:11:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:11:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:11:59 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:11:59 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:12:19 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:12:19 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:12:39 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:12:39 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:13:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:13:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:13:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:13:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:13:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:13:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:14:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:14:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:14:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:14:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:14:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:14:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:15:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:15:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:15:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:15:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:15:34 INFO  worker-3-5 c.w.a.common.Message [decode]type=1065,length=0078,CommonOperation(context=1060;002826;7;20;7;24;200;08:14:45 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 08:15:34 INFO  worker-3-5 c.w.a.common.Message [encode]0067;0010;
+2022-02-24 08:15:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:15:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:16:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:16:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:16:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:16:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:16:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:16:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:17:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:17:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:17:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:17:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:17:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:17:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:18:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:18:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:18:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:18:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:18:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:18:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:19:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:19:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:19:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:19:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:19:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:19:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:20:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:20:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:20:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:20:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:20:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:20:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:21:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:21:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:21:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:21:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:21:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:21:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:22:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:22:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:22:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:22:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:22:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:22:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:23:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:23:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:23:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:23:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:23:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:23:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:24:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:24:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:24:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:24:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:24:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:24:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:25:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:25:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:25:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:25:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:25:35 INFO  worker-3-5 c.w.a.common.Message [decode]type=1065,length=0078,CommonOperation(context=1060;002827;7;20;7;24;200;08:24:45 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 08:25:35 INFO  worker-3-5 c.w.a.common.Message [encode]0067;0010;
+2022-02-24 08:25:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:25:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:26:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:26:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:26:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:26:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:26:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:26:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:27:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:27:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:27:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:27:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:27:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:27:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:28:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:28:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:28:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:28:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:28:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:28:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:29:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:29:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:29:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:29:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:29:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:29:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:30:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:30:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:30:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:30:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:30:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:30:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:31:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:31:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:31:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:31:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:31:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:31:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:32:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:32:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:32:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:32:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:32:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:32:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:33:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:33:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:33:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:33:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:33:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:33:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:34:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:34:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:34:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:34:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:34:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:34:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:35:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:35:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:35:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:35:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:35:35 INFO  worker-3-5 c.w.a.common.Message [decode]type=1065,length=0078,CommonOperation(context=1060;002828;7;20;7;24;200;08:34:45 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 08:35:35 INFO  worker-3-5 c.w.a.common.Message [encode]0067;0010;
+2022-02-24 08:35:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:35:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:36:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:36:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:36:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:36:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:36:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:36:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:37:00 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:37:00 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:37:20 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:37:20 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:37:40 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:37:40 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:38:01 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:38:01 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:38:21 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:38:21 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:38:41 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:38:41 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:39:01 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:39:01 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:39:21 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:39:21 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:39:41 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:39:41 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:40:01 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:40:01 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:40:21 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:40:21 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:40:41 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:40:41 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:41:01 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:41:01 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:41:21 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:41:21 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 08:41:41 INFO  worker-3-5 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 08:41:41 INFO  worker-3-5 c.w.a.common.Message [encode]0080;0010;
+2022-02-24 11:24:20 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 21148 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 11:24:20 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 11:24:21 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 11:24:21 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 11:24:21 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 11:24:21 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 11:24:21 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 11:24:21 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1352 ms
+2022-02-24 11:24:21 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 11:24:22 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 11:24:22 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.164 seconds (JVM running for 4.905)
+2022-02-24 11:24:27 INFO  business-4-1 c.w.a.s.h.KeepaliveHandler 192.168.2.205:37151 -> [连接成功]
+2022-02-24 11:24:27 INFO  worker-3-1 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-24 11:24:27 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 11:24:27 INFO  worker-3-1 c.w.a.common.Message [decode]type=1065,length=1098,CommonOperation(context=1060;002829;7;20;7;24;200;08:44:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002830;7;20;7;24;200;08:54:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002831;7;20;7;24;200;09:04:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002832;7;20;7;24;200;09:14:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002833;7;20;7;24;200;09:24:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002834;7;20;7;24;200;09:34:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002835;7;20;7;24;200;09:44:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002836;7;20;7;24;200;09:54:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002837;7;20;7;24;200;10:04:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002838;7;20;7;24;200;10:14:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002839;7;20;7;24;200;10:24:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002840;7;20;7;24;200;10:34:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002841;7;20;7;24;200;10:44:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002842;7;20;7;24;200;10:54:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002843;7;20;7;24;200;11:04:47 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002844;7;20;7;24;200;11:14:47 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 11:24:47 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;)
+2022-02-24 11:24:47 INFO  business-4-1 c.w.a.s.h.KeepaliveHandler /192.168.2.205:37151 !- [断开连接]
+2022-02-24 11:24:47 INFO  business-4-3 c.w.a.s.h.KeepaliveHandler 192.168.2.205:37172 -> [连接成功]
+2022-02-24 11:24:47 INFO  worker-3-2 c.w.a.common.Message [decode]type=1042,length=0028,CommonOperation(context=00:06:8E:02:CE:15;)
+2022-02-24 11:24:47 INFO  worker-3-2 c.w.a.common.Message [decode]type=1065,length=1098,CommonOperation(context=1060;002829;7;20;7;24;200;08:44:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002830;7;20;7;24;200;08:54:45 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002831;7;20;7;24;200;09:04:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002832;7;20;7;24;200;09:14:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002833;7;20;7;24;200;09:24:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002834;7;20;7;24;200;09:34:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002835;7;20;7;24;200;09:44:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002836;7;20;7;24;200;09:54:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002837;7;20;7;24;200;10:04:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002838;7;20;7;24;200;10:14:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002839;7;20;7;24;200;10:24:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002840;7;20;7;24;200;10:34:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002841;7;20;7;24;200;10:44:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002842;7;20;7;24;200;10:54:46 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002843;7;20;7;24;200;11:04:47 GMT 02/24/2022;00:06:8E:02:CE:15^1060;002844;7;20;7;24;200;11:14:47 GMT 02/24/2022;00:06:8E:02:CE:15^)
+2022-02-24 22:01:10 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 18252 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:01:10 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:01:11 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:01:11 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:01:11 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:01:11 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:01:11 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:01:11 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1416 ms
+2022-02-24 22:01:12 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:01:12 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:01:12 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.641 seconds (JVM running for 3.676)
+2022-02-24 22:01:12 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:01:12 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用epoll模式
+2022-02-24 22:01:12 INFO  main o.s.b.a.l.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-24 22:01:12 ERROR main o.s.b.SpringApplication Application run failed
+java.lang.UnsatisfiedLinkError: failed to load the required native library
+	at io.netty.channel.epoll.Epoll.ensureAvailability(Epoll.java:80)
+	at io.netty.channel.epoll.EpollEventLoop.<clinit>(EpollEventLoop.java:53)
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:143)
+	at io.netty.channel.epoll.EpollEventLoopGroup.newChild(EpollEventLoopGroup.java:36)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:105)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:92)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:69)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:53)
+	at io.netty.channel.epoll.EpollEventLoopGroup.<init>(EpollEventLoopGroup.java:46)
+	at com.wimetro.acs.server.runner.TwoPortNettyServer.start(TwoPortNettyServer.java:68)
+	at com.wimetro.acs.server.runner.TwoPortNettyServer.run(TwoPortNettyServer.java:124)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.wimetro.acs.GatewayApplication.main(GatewayApplication.java:10)
+Caused by: java.lang.ExceptionInInitializerError: null
+	at io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Only supported on Linux
+	at io.netty.channel.epoll.Native.loadNativeLibrary(Native.java:180)
+	at io.netty.channel.epoll.Native.<clinit>(Native.java:57)
+	... 21 common frames omitted
+2022-02-24 22:01:12 INFO  main c.w.a.s.r.TwoPortNettyServer 服务停止
+2022-02-24 22:01:36 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 21648 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:01:36 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:01:38 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:01:38 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:01:38 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:01:38 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:01:38 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:01:38 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1623 ms
+2022-02-24 22:01:39 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:01:39 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:01:39 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.506 seconds (JVM running for 5.683)
+2022-02-24 22:01:39 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:01:39 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 22:01:40 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x67e2b526]'
+2022-02-24 22:01:40 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x67e2b526]'
+2022-02-24 22:01:40 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526] REGISTERED
+2022-02-24 22:01:40 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 22:01:40 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xc46ae90d]'
+2022-02-24 22:01:40 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0xc46ae90d]'
+2022-02-24 22:01:40 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 22:01:40 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d] REGISTERED
+2022-02-24 22:01:40 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 22:01:40 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 22:03:00 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0xf2525505, L:/127.0.0.1:4071 - R:/127.0.0.1:58594]
+2022-02-24 22:03:00 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-24 22:03:24 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线1周期了
+2022-02-24 22:03:31 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x2a8910ea, L:/127.0.0.1:4070 - R:/127.0.0.1:58597]
+2022-02-24 22:03:31 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-24 22:03:43 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线2周期了
+2022-02-24 22:04:03 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线3周期了
+2022-02-24 22:04:03 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.AcceptorIdleStateTrigger 服务器主动关闭客户端链路--60s没有的信息了
+2022-02-24 22:04:04 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.AcceptorIdleStateTrigger ----客户端设备连接断开:null
+2022-02-24 22:04:04 WARN  nioEventLoopGroup-3-1 i.n.c.DefaultChannelPipeline An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at java.base/java.util.concurrent.ConcurrentHashMap.containsKey(ConcurrentHashMap.java:964)
+	at com.wimetro.acs.server.runner.ChannelManager.remove(ChannelManager.java:60)
+	at com.wimetro.acs.server.handler.AcceptorIdleStateTrigger.channelInactive(AcceptorIdleStateTrigger.java:37)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:278)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1416)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:912)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:816)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-24 22:04:09 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x6f3cd2a4, L:/127.0.0.1:4071 - R:/127.0.0.1:58600]
+2022-02-24 22:04:09 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xc46ae90d, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-24 22:04:29 INFO  nioEventLoopGroup-3-3 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线1周期了
+2022-02-24 22:04:48 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线1周期了
+2022-02-24 22:05:08 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线2周期了
+2022-02-24 22:06:23 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线3周期了
+2022-02-24 22:06:23 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger 服务器主动关闭客户端链路--60s没有的信息了
+2022-02-24 22:06:23 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger ----客户端设备连接断开:null
+2022-02-24 22:06:23 WARN  nioEventLoopGroup-3-2 i.n.c.DefaultChannelPipeline An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at java.base/java.util.concurrent.ConcurrentHashMap.containsKey(ConcurrentHashMap.java:964)
+	at com.wimetro.acs.server.runner.ChannelManager.remove(ChannelManager.java:60)
+	at com.wimetro.acs.server.handler.AcceptorIdleStateTrigger.channelInactive(AcceptorIdleStateTrigger.java:37)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:278)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1416)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:912)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:816)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-24 22:08:47 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x6dbbef82, L:/127.0.0.1:4070 - R:/127.0.0.1:58780]
+2022-02-24 22:08:47 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x67e2b526, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-24 22:09:14 INFO  nioEventLoopGroup-3-4 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线1周期了
+2022-02-24 22:09:34 INFO  nioEventLoopGroup-3-4 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线2周期了
+2022-02-24 22:09:54 INFO  nioEventLoopGroup-3-4 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线3周期了
+2022-02-24 22:09:54 INFO  nioEventLoopGroup-3-4 c.w.a.s.h.AcceptorIdleStateTrigger 服务器主动关闭客户端链路--60s没有的信息了
+2022-02-24 22:09:54 INFO  nioEventLoopGroup-3-4 c.w.a.s.h.AcceptorIdleStateTrigger ----客户端设备连接断开:null
+2022-02-24 22:09:54 WARN  nioEventLoopGroup-3-4 i.n.c.DefaultChannelPipeline An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936)
+	at java.base/java.util.concurrent.ConcurrentHashMap.containsKey(ConcurrentHashMap.java:964)
+	at com.wimetro.acs.server.runner.ChannelManager.remove(ChannelManager.java:60)
+	at com.wimetro.acs.server.handler.AcceptorIdleStateTrigger.channelInactive(AcceptorIdleStateTrigger.java:37)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:278)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1416)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:912)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:816)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-24 22:16:40 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 18300 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:16:40 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:16:41 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:16:41 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:16:41 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:16:41 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:16:41 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:16:41 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1267 ms
+2022-02-24 22:16:42 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:16:42 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:16:42 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.268 seconds (JVM running for 3.31)
+2022-02-24 22:16:42 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:16:42 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 22:16:43 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xa56e5180]'
+2022-02-24 22:16:43 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0xa56e5180]'
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xa56e5180] REGISTERED
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xa56e5180] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 22:16:43 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xf9b8cbd7]'
+2022-02-24 22:16:43 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0xf9b8cbd7]'
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xa56e5180, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xf9b8cbd7] REGISTERED
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xf9b8cbd7] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xf9b8cbd7, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xf9b8cbd7, L:/0:0:0:0:0:0:0:0:4071] CLOSE
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xa56e5180, L:/0:0:0:0:0:0:0:0:4070] CLOSE
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xf9b8cbd7, L:/0:0:0:0:0:0:0:0:4071] INACTIVE
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xa56e5180, L:/0:0:0:0:0:0:0:0:4070] INACTIVE
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xf9b8cbd7, L:/0:0:0:0:0:0:0:0:4071] UNREGISTERED
+2022-02-24 22:16:43 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xa56e5180, L:/0:0:0:0:0:0:0:0:4070] UNREGISTERED
+2022-02-24 22:18:36 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 21852 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:18:36 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:18:37 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:18:37 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:18:37 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:18:37 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:18:38 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:18:38 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1791 ms
+2022-02-24 22:18:38 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:18:38 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:18:38 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.855 seconds (JVM running for 7.126)
+2022-02-24 22:18:38 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:18:38 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 22:18:39 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x2044960a]'
+2022-02-24 22:18:39 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x2044960a]'
+2022-02-24 22:18:39 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x2044960a] REGISTERED
+2022-02-24 22:18:39 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x2044960a] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 22:18:39 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x5749d0c5]'
+2022-02-24 22:18:39 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x5749d0c5]'
+2022-02-24 22:18:39 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x2044960a, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 22:18:39 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x5749d0c5] REGISTERED
+2022-02-24 22:18:39 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x5749d0c5] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 22:18:39 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x5749d0c5, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 22:18:47 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x2044960a, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x4b98f76b, L:/127.0.0.1:4070 - R:/127.0.0.1:59256]
+2022-02-24 22:18:47 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x2044960a, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-24 22:19:42 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 19280 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:19:42 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:19:43 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:19:43 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:19:43 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:19:43 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:19:43 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:19:43 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 753 ms
+2022-02-24 22:19:43 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:19:43 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:19:43 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.715 seconds (JVM running for 2.815)
+2022-02-24 22:19:43 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:19:43 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 22:19:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x3082c589]'
+2022-02-24 22:19:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x3082c589]'
+2022-02-24 22:19:44 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x3082c589] REGISTERED
+2022-02-24 22:19:44 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x3082c589] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 22:19:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x496e9797]'
+2022-02-24 22:19:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x496e9797]'
+2022-02-24 22:19:44 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x3082c589, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 22:19:44 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x496e9797] REGISTERED
+2022-02-24 22:19:44 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x496e9797] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 22:19:44 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x496e9797, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 22:20:06 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 25896 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:20:06 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:20:08 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:20:08 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:20:08 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:20:08 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:20:08 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:20:08 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1912 ms
+2022-02-24 22:20:09 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:20:09 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:20:09 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.949 seconds (JVM running for 6.303)
+2022-02-24 22:20:51 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 24636 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:20:51 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:20:53 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:20:53 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:20:53 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:20:53 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:20:53 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:20:53 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1759 ms
+2022-02-24 22:20:54 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:20:54 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:20:54 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.125 seconds (JVM running for 4.212)
+2022-02-24 22:22:10 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 8116 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:22:10 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:22:11 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:22:11 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:22:11 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:22:11 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:22:11 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:22:11 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1491 ms
+2022-02-24 22:22:12 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:22:12 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:22:12 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.73 seconds (JVM running for 3.705)
+2022-02-24 22:22:12 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:22:12 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 22:22:13 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x65849462]'
+2022-02-24 22:22:13 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x65849462]'
+2022-02-24 22:22:13 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x65849462] REGISTERED
+2022-02-24 22:22:13 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x65849462] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 22:22:13 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x3a308e9b]'
+2022-02-24 22:22:13 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0x3a308e9b]'
+2022-02-24 22:22:13 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0x65849462, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 22:22:13 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x3a308e9b] REGISTERED
+2022-02-24 22:22:13 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x3a308e9b] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 22:22:13 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0x3a308e9b, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 22:23:04 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 20120 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:23:04 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:23:06 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:23:06 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:23:06 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:23:06 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:23:06 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:23:06 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1774 ms
+2022-02-24 22:23:06 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:23:06 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:23:06 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.426 seconds (JVM running for 4.896)
+2022-02-24 22:24:01 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] REGISTERED
+2022-02-24 22:24:01 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] ACTIVE
+2022-02-24 22:24:01 INFO  business-4-1 c.w.a.s.h.KeepaliveHandler 127.0.0.1:59752 -> [连接成功]
+2022-02-24 22:24:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:24:05 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] READ: Message(messageHeader=MessageHeader(sourceIp=127.0.0.1, targetIp=, msgType=1080), messageBody=CommonOperation(context=))
+2022-02-24 22:24:05 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] READ COMPLETE
+2022-02-24 22:24:07 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:24:07 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] READ: Message(messageHeader=MessageHeader(sourceIp=127.0.0.1, targetIp=, msgType=1080), messageBody=CommonOperation(context=))
+2022-02-24 22:24:07 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] READ COMPLETE
+2022-02-24 22:24:27 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0x8784b01f, L:/127.0.0.1:4070 - R:/127.0.0.1:59752] USER_EVENT: io.netty.handler.timeout.IdleStateEvent@2fa20fca
+2022-02-24 22:24:35 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 24480 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:24:35 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:24:36 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:24:36 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:24:36 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:24:36 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:24:36 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:24:36 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 838 ms
+2022-02-24 22:24:37 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:24:37 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:24:37 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.812 seconds (JVM running for 2.843)
+2022-02-24 22:25:15 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 20432 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:25:15 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:25:16 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:25:16 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:25:16 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:25:16 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:25:16 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:25:16 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1233 ms
+2022-02-24 22:25:17 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:25:17 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:25:17 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.346 seconds (JVM running for 3.364)
+2022-02-24 22:25:37 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 20912 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:25:37 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:25:39 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:25:39 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:25:39 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:25:39 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:25:39 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:25:39 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1905 ms
+2022-02-24 22:25:40 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:25:40 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:25:40 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 3.972 seconds (JVM running for 6.211)
+2022-02-24 22:25:56 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] REGISTERED
+2022-02-24 22:25:56 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] ACTIVE
+2022-02-24 22:25:56 INFO  business-4-1 c.w.a.s.h.KeepaliveHandler 127.0.0.1:60016 -> [连接成功]
+2022-02-24 22:26:00 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:26:00 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] READ: Message(messageHeader=MessageHeader(sourceIp=127.0.0.1, targetIp=, msgType=1080), messageBody=CommonOperation(context=))
+2022-02-24 22:26:00 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] READ COMPLETE
+2022-02-24 22:26:02 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:26:02 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] READ: Message(messageHeader=MessageHeader(sourceIp=127.0.0.1, targetIp=, msgType=1080), messageBody=CommonOperation(context=))
+2022-02-24 22:26:02 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] READ COMPLETE
+2022-02-24 22:26:05 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 - R:/127.0.0.1:60016] READ COMPLETE
+2022-02-24 22:26:05 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 ! R:/127.0.0.1:60016] INACTIVE
+2022-02-24 22:26:05 INFO  worker-3-1 i.n.h.l.LoggingHandler [id: 0xe0e74346, L:/127.0.0.1:4072 ! R:/127.0.0.1:60016] UNREGISTERED
+2022-02-24 22:26:05 INFO  business-4-2 c.w.a.s.h.KeepaliveHandler /127.0.0.1:60016 !- [断开连接]
+2022-02-24 22:51:42 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 20420 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 22:51:42 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 22:51:43 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 22:51:43 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:51:43 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 22:51:43 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 22:51:43 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 22:51:43 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 875 ms
+2022-02-24 22:51:43 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 22:51:43 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 22:51:43 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.685 seconds (JVM running for 2.758)
+2022-02-24 22:51:43 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 22:51:43 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 22:51:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xc594ad57]'
+2022-02-24 22:51:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0xc594ad57]'
+2022-02-24 22:51:44 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xc594ad57] REGISTERED
+2022-02-24 22:51:44 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xc594ad57] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 22:51:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xafdd298f]'
+2022-02-24 22:51:44 WARN  main i.n.b.ServerBootstrap Unknown channel option 'TCP_NODELAY' for channel '[id: 0xafdd298f]'
+2022-02-24 22:51:44 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xc594ad57, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 22:51:44 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xafdd298f] REGISTERED
+2022-02-24 22:51:44 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xafdd298f] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 22:51:44 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xafdd298f, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 22:51:48 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xc594ad57, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0xbdfdbbf8, L:/127.0.0.1:4070 - R:/127.0.0.1:63225]
+2022-02-24 22:51:48 INFO  nioEventLoopGroup-2-1 i.n.h.l.LoggingHandler [id: 0xc594ad57, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-24 22:51:48 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.KeepaliveHandler 127.0.0.1:63225 -> [连接成功]
+2022-02-24 22:51:51 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:51:51 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:51:53 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xafdd298f, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x1bb8ae93, L:/127.0.0.1:4071 - R:/127.0.0.1:63228]
+2022-02-24 22:51:53 INFO  nioEventLoopGroup-2-2 i.n.h.l.LoggingHandler [id: 0xafdd298f, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-24 22:51:53 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.KeepaliveHandler 127.0.0.1:63228 -> [连接成功]
+2022-02-24 22:51:55 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:51:55 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:51:56 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:51:56 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:51:58 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:51:58 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:01 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:01 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:01 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:01 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:04 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:04 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:06 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:06 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:07 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:07 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:10 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:10 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:11 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:11 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:13 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:13 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:16 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:16 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:21 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:21 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:26 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:26 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:31 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:31 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:33 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线1周期了
+2022-02-24 22:52:36 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:36 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:41 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:41 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:46 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:46 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:51 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:51 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:53 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线2周期了
+2022-02-24 22:52:56 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:52:56 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:56 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:56 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:52:59 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:52:59 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:01 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:01 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:02 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:02 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:05 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:05 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:06 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:06 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:11 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:11 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:14 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:14 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:14 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:14 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:14 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:14 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:16 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:16 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:17 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:17 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:17 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:17 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:17 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:17 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:20 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:20 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:20 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:20 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:20 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:20 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:21 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:21 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:23 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:23 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:23 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:23 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:23 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:23 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:26 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:29 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:29 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:29 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:29 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:29 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:29 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:31 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:31 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:32 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:32 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:32 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:32 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:32 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:32 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:35 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:35 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:35 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:35 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:35 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:35 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:36 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:36 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:38 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:38 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:38 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:38 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:38 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:38 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:41 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:44 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:44 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:44 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:44 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:44 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:44 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:46 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:46 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:47 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:47 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:47 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:47 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:47 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:47 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:50 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:50 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:50 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:50 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:50 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:50 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:51 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:51 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:53 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:53 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:53 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:53 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:53 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:53 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:53:56 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:59 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:59 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:59 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:59 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:53:59 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:53:59 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:01 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:54:01 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:02 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:02 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:02 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:02 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:02 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:02 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:05 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:05 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:05 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:05 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:05 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:05 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:06 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:54:06 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:09 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:09 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:09 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:09 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:09 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:09 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:11 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:54:11 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:12 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:12 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:12 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:12 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:12 INFO  nioEventLoopGroup-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-24 22:54:12 INFO  nioEventLoopGroup-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:13 INFO  nioEventLoopGroup-3-2 c.w.a.s.h.AcceptorIdleStateTrigger ----客户端设备连接断开:null
+2022-02-24 22:54:13 ERROR nioEventLoopGroup-3-2 c.w.a.s.h.KeepaliveHandler /127.0.0.1:63228 -> [异常]原因：null
+2022-02-24 22:54:16 INFO  nioEventLoopGroup-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-24 22:54:16 INFO  nioEventLoopGroup-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-24 22:54:18 INFO  nioEventLoopGroup-3-1 c.w.a.s.h.AcceptorIdleStateTrigger ----客户端设备连接断开:null
+2022-02-24 22:54:18 ERROR nioEventLoopGroup-3-1 c.w.a.s.h.KeepaliveHandler /127.0.0.1:63225 -> [异常]原因：null
+2022-02-24 23:31:17 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 26564 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 23:31:18 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 23:31:18 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 23:31:18 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:31:18 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 23:31:18 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 23:31:19 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 23:31:19 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 986 ms
+2022-02-24 23:31:19 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:31:19 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 23:31:19 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.889 seconds (JVM running for 2.937)
+2022-02-24 23:31:19 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 23:31:19 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 23:31:19 INFO  main c.w.a.s.r.TwoPortNettyServer nettyServer 启动时发生异常---------------{}
+java.lang.IllegalStateException: group not set
+	at io.netty.bootstrap.AbstractBootstrap.validate(AbstractBootstrap.java:204)
+	at io.netty.bootstrap.ServerBootstrap.validate(ServerBootstrap.java:183)
+	at io.netty.bootstrap.ServerBootstrap.validate(ServerBootstrap.java:44)
+	at io.netty.bootstrap.AbstractBootstrap.bind(AbstractBootstrap.java:266)
+	at io.netty.bootstrap.AbstractBootstrap.bind(AbstractBootstrap.java:245)
+	at com.wimetro.acs.server.runner.TwoPortNettyServer.start(TwoPortNettyServer.java:110)
+	at com.wimetro.acs.server.runner.TwoPortNettyServer.run(TwoPortNettyServer.java:137)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.wimetro.acs.GatewayApplication.main(GatewayApplication.java:10)
+2022-02-24 23:31:19 INFO  main c.w.a.s.r.TwoPortNettyServer group not set
+2022-02-24 23:32:14 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 4344 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 23:32:14 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 23:32:15 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 23:32:15 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:32:15 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 23:32:15 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 23:32:15 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 23:32:15 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1256 ms
+2022-02-24 23:32:15 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:32:15 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 23:32:15 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.346 seconds (JVM running for 3.373)
+2022-02-24 23:32:15 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 23:32:15 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 23:34:19 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 14672 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 23:34:19 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 23:34:19 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 23:34:20 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:34:20 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 23:34:20 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 23:34:20 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 23:34:20 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1015 ms
+2022-02-24 23:34:20 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:34:20 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 23:34:20 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.937 seconds (JVM running for 2.999)
+2022-02-24 23:34:20 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 23:34:20 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 23:34:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xdd5a25a1] REGISTERED
+2022-02-24 23:34:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xdd5a25a1] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 23:34:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xdd5a25a1, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 23:34:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x99948bac] REGISTERED
+2022-02-24 23:34:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x99948bac] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 23:34:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x99948bac, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 23:35:18 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 7612 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 23:35:18 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 23:35:19 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 23:35:19 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:35:19 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 23:35:19 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 23:35:20 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 23:35:20 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1339 ms
+2022-02-24 23:35:20 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:35:20 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 23:35:20 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.356 seconds (JVM running for 3.418)
+2022-02-24 23:35:20 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 23:35:20 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 23:35:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x8f377327] REGISTERED
+2022-02-24 23:35:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x8f377327] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 23:35:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x8f377327, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 23:35:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x40647ba0] REGISTERED
+2022-02-24 23:35:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x40647ba0] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 23:35:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x40647ba0, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-24 23:38:11 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 22860 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-24 23:38:11 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-24 23:38:12 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-24 23:38:12 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:38:12 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-24 23:38:12 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-24 23:38:12 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-24 23:38:12 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1179 ms
+2022-02-24 23:38:12 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-24 23:38:12 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-24 23:38:12 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.209 seconds (JVM running for 3.239)
+2022-02-24 23:38:12 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-24 23:38:12 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-24 23:38:13 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xad1ab28d] REGISTERED
+2022-02-24 23:38:13 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xad1ab28d] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-24 23:38:13 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xad1ab28d, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-24 23:38:13 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xff1b87fd] REGISTERED
+2022-02-24 23:38:13 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xff1b87fd] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-24 23:38:13 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xff1b87fd, L:/0:0:0:0:0:0:0:0:4071] ACTIVE

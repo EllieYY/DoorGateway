@@ -1,6 +1,6 @@
 package com.wimetro.acs.util.ProtocolFiledUtil;
 
-import com.wimetro.acs.common.AcsGatewayConsts;
+import com.wimetro.acs.common.Constants;
 
 import java.lang.annotation.*;
 
@@ -16,6 +16,6 @@ import java.lang.annotation.*;
 public @interface CmdProp {
     int index() default 0;
 
-    String deCodec() default AcsGatewayConsts.ENCODER_TO_STR;
-    String enCodec() default AcsGatewayConsts.ENCODER_TO_STR;
+    String deCodec() default Constants.ENCODER_TO_STR;
+    String enCodec() default Constants.ENCODER_TO_STR;
 }

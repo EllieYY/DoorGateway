@@ -1,0 +1,2 @@
+2022-02-22 07:53:50 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler /192.168.2.205:48241 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-02-22 09:03:46 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:36857 -> [异常]原因：远程主机强迫关闭了一个现有的连接。

@@ -37,5 +37,6 @@ activemq:
     queue-gateway: fc_system
 
 netty:
-  port: 4070
-  connections: 2048
+  deviceClientPort: 4070
+  webClientPort: 4072
+  webClientIp: 127.0.0.1

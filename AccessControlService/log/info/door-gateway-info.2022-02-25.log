@@ -1,0 +1,472 @@
+2022-02-25 10:38:39 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 24268 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:38:39 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:38:40 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:38:40 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:38:40 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:38:40 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:38:40 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:38:40 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1196 ms
+2022-02-25 10:38:41 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:38:41 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:38:41 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.629 seconds (JVM running for 3.74)
+2022-02-25 10:38:41 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:38:41 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:38:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xa89127c2] REGISTERED
+2022-02-25 10:38:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xa89127c2] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:38:44 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xfdf69bce] REGISTERED
+2022-02-25 10:38:44 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xa89127c2, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:38:44 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xfdf69bce] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:38:44 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xfdf69bce, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:38:44 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xa89127c2, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0xaf08093a, L:/127.0.0.1:4070 - R:/127.0.0.1:64001]
+2022-02-25 10:38:44 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xa89127c2, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-25 10:38:44 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:64001 -> [连接成功]
+2022-02-25 10:38:45 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xfdf69bce, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x59435199, L:/127.0.0.1:4071 - R:/127.0.0.1:64006]
+2022-02-25 10:38:45 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xfdf69bce, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:38:45 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:64006 -> [连接成功]
+2022-02-25 10:38:50 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:38:50 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:38:55 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:38:55 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:38:55 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:38:55 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:38:55 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:38:55 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:38:55 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:38:55 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:38:58 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:38:58 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:38:58 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:38:58 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:38:58 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:38:58 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:00 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:00 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:01 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:01 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:01 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:01 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:01 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:01 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:04 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:04 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:04 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:04 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:04 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:04 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:05 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:05 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:07 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:07 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:07 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:07 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:07 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:07 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:10 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:10 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:10 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:10 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:10 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:10 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:10 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:10 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:13 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:13 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:13 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:13 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:13 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:13 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:15 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:15 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:16 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:16 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:16 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:16 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:16 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:16 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:19 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:19 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:19 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:19 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:19 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:19 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:20 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:20 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:22 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:22 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:22 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:22 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:22 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:22 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:25 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:25 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:25 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:25 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:25 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:25 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:28 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:28 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:28 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:28 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:28 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:28 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:31 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:31 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:31 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:31 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:31 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:31 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:35 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:35 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:35 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:35 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:35 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:35 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:38 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:38 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:38 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:38 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:39:38 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:38 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64006 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:39:40 INFO  worker-3-1 c.w.a.s.h.AcceptorIdleStateTrigger null客户端离线1周期了
+2022-02-25 10:39:46 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:46 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:51 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:51 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:39:56 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:39:56 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:40:01 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolDecoder DeviceProtocolDecoder接收消息：1080;0010;
+2022-02-25 10:40:01 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:44:25 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 26580 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:44:25 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:44:27 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:44:27 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:44:27 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:44:27 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:44:27 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:44:27 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1257 ms
+2022-02-25 10:44:27 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:44:27 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:44:27 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.569 seconds (JVM running for 4.174)
+2022-02-25 10:44:27 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:44:27 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:44:28 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x93b6a4f9] REGISTERED
+2022-02-25 10:44:29 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x93b6a4f9] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:44:29 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x93b6a4f9, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:44:29 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x074beef8] REGISTERED
+2022-02-25 10:44:29 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x074beef8] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:44:29 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x074beef8, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:44:44 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x074beef8, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0xd6539f73, L:/127.0.0.1:4071 - R:/127.0.0.1:64428]
+2022-02-25 10:44:44 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x074beef8, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:44:44 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:64428 -> [连接成功]
+2022-02-25 10:44:44 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:44:44 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64428 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:47:29 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 27332 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:47:29 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:47:30 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:47:30 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:47:30 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:47:30 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:47:30 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:47:30 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1195 ms
+2022-02-25 10:47:30 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:47:30 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:47:30 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.531 seconds (JVM running for 5.414)
+2022-02-25 10:47:30 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:47:30 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:47:31 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c] REGISTERED
+2022-02-25 10:47:31 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:47:31 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:47:31 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372] REGISTERED
+2022-02-25 10:47:31 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:47:31 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:47:36 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0xc51a6b16, L:/127.0.0.1:4071 - R:/127.0.0.1:64728]
+2022-02-25 10:47:36 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:47:36 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:64728 -> [连接成功]
+2022-02-25 10:47:39 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:50:43 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:64728 -> [异常]原因：java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+2022-02-25 10:50:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] CLOSE
+2022-02-25 10:50:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c, L:/0:0:0:0:0:0:0:0:4070] CLOSE
+2022-02-25 10:50:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] CLOSE
+2022-02-25 10:50:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c, L:/0:0:0:0:0:0:0:0:4070] CLOSE
+2022-02-25 10:50:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c, L:/0:0:0:0:0:0:0:0:4070] CLOSE
+2022-02-25 10:50:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] CLOSE
+2022-02-25 10:50:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] INACTIVE
+2022-02-25 10:50:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c, L:/0:0:0:0:0:0:0:0:4070] INACTIVE
+2022-02-25 10:50:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x062d5372, L:/0:0:0:0:0:0:0:0:4071] UNREGISTERED
+2022-02-25 10:50:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xc5251b4c, L:/0:0:0:0:0:0:0:0:4070] UNREGISTERED
+2022-02-25 10:50:43 INFO  SpringApplicationShutdownHook c.w.a.s.r.TwoPortNettyServer  服务关闭 
+2022-02-25 10:50:43 INFO  SpringApplicationShutdownHook c.w.a.s.r.TwoPortNettyServer 服务停止
+2022-02-25 10:50:43 WARN  worker-3-1 i.n.c.AbstractChannelHandlerContext Failed to submit an exceptionCaught() event.
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@7a2ce567[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@bca0fb3[Wrapped task = io.netty.util.concurrent.UnorderedThreadPoolEventExecutor$NonNotifyRunnable@41a25cfa]] rejected from io.netty.util.concurrent.UnorderedThreadPoolEventExecutor@7bdea143[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at io.netty.util.concurrent.UnorderedThreadPoolEventExecutor.execute(UnorderedThreadPoolEventExecutor.java:209)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:268)
+	at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:143)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:297)
+	at io.netty.channel.AbstractChannelHandlerContext.notifyHandlerException(AbstractChannelHandlerContext.java:831)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:259)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1416)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:912)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:816)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasksFrom(SingleThreadEventExecutor.java:392)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:367)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:704)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:525)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-25 10:50:43 WARN  worker-3-1 i.n.c.AbstractChannelHandlerContext The exceptionCaught() event that was failed to submit was:
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@733501fb[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@49a07040[Wrapped task = io.netty.util.concurrent.UnorderedThreadPoolEventExecutor$NonNotifyRunnable@214d126c]] rejected from io.netty.util.concurrent.UnorderedThreadPoolEventExecutor@7bdea143[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at io.netty.util.concurrent.UnorderedThreadPoolEventExecutor.execute(UnorderedThreadPoolEventExecutor.java:209)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:245)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:393)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:358)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:236)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1416)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:243)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:912)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:816)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasksFrom(SingleThreadEventExecutor.java:392)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:367)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:704)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:525)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-25 10:50:43 WARN  worker-3-1 i.n.c.AbstractChannelHandlerContext Failed to submit an exceptionCaught() event.
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@5dae86f8[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@71aa2dc[Wrapped task = io.netty.util.concurrent.UnorderedThreadPoolEventExecutor$NonNotifyRunnable@443009ea]] rejected from io.netty.util.concurrent.UnorderedThreadPoolEventExecutor@7bdea143[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at io.netty.util.concurrent.UnorderedThreadPoolEventExecutor.execute(UnorderedThreadPoolEventExecutor.java:209)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:279)
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:268)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1388)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:297)
+	at io.netty.channel.AbstractChannelHandlerContext.notifyHandlerException(AbstractChannelHandlerContext.java:831)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregistered(AbstractChannelHandlerContext.java:195)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregistered(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelUnregistered(DefaultChannelPipeline.java:830)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:824)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasksFrom(SingleThreadEventExecutor.java:392)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:367)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:704)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:525)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-25 10:50:43 WARN  worker-3-1 i.n.c.AbstractChannelHandlerContext The exceptionCaught() event that was failed to submit was:
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@58e051c0[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@2c3dfa97[Wrapped task = io.netty.util.concurrent.UnorderedThreadPoolEventExecutor$NonNotifyRunnable@1401d166]] rejected from io.netty.util.concurrent.UnorderedThreadPoolEventExecutor@7bdea143[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562)
+	at io.netty.util.concurrent.UnorderedThreadPoolEventExecutor.execute(UnorderedThreadPoolEventExecutor.java:209)
+	at io.netty.channel.DefaultChannelPipeline.destroyUp(DefaultChannelPipeline.java:860)
+	at io.netty.channel.DefaultChannelPipeline.destroy(DefaultChannelPipeline.java:845)
+	at io.netty.channel.DefaultChannelPipeline.access$700(DefaultChannelPipeline.java:46)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelUnregistered(DefaultChannelPipeline.java:1403)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregistered(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelUnregistered(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelUnregistered(DefaultChannelPipeline.java:830)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$8.run(AbstractChannel.java:824)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasksFrom(SingleThreadEventExecutor.java:392)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:367)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:704)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:525)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-02-25 10:50:44 INFO  SpringApplicationShutdownHook c.w.a.s.r.TwoPortNettyServer  服务关闭 
+2022-02-25 10:51:18 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 23788 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:51:18 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:51:19 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:51:19 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:51:19 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:51:19 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:51:19 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:51:19 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1144 ms
+2022-02-25 10:51:20 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:51:20 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:51:20 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.42 seconds (JVM running for 4.159)
+2022-02-25 10:51:20 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:51:20 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:51:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xf1564a02] REGISTERED
+2022-02-25 10:51:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xf1564a02] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:51:21 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xf1564a02, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:51:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf] REGISTERED
+2022-02-25 10:51:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:51:21 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:51:23 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x92632936, L:/127.0.0.1:4071 - R:/127.0.0.1:65037]
+2022-02-25 10:51:23 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:51:23 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:65037 -> [连接成功]
+2022-02-25 10:51:26 INFO  business-4-2 c.w.a.s.h.ServerProcessHandler /127.0.0.1:65037 !- [断开连接]
+2022-02-25 10:51:27 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0xd21fcad5, L:/127.0.0.1:4071 - R:/127.0.0.1:65042]
+2022-02-25 10:51:27 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x53076eaf, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:51:27 INFO  business-4-4 c.w.a.s.h.ServerProcessHandler 127.0.0.1:65042 -> [连接成功]
+2022-02-25 10:51:29 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:29 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:35 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:35 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:38 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:38 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:41 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:41 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:44 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:44 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:47 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:47 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:50 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:50 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:53 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:53 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:56 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:56 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:51:59 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:51:59 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:02 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:02 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:05 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:05 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:08 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:08 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:11 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:11 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:14 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:14 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:17 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:17 INFO  worker-3-2 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:47 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 12984 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:52:47 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:52:48 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:52:48 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:52:48 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:52:48 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:52:48 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:52:48 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1189 ms
+2022-02-25 10:52:49 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:52:49 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:52:49 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.427 seconds (JVM running for 3.574)
+2022-02-25 10:52:49 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:52:49 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:52:50 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe7e5ded3] REGISTERED
+2022-02-25 10:52:50 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe7e5ded3] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:52:50 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe7e5ded3, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:52:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x03a9eecd] REGISTERED
+2022-02-25 10:52:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x03a9eecd] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:52:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x03a9eecd, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:52:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x03a9eecd, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x736f821d, L:/127.0.0.1:4071 - R:/127.0.0.1:65183]
+2022-02-25 10:52:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x03a9eecd, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:52:50 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:65183 -> [连接成功]
+2022-02-25 10:52:51 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:51 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:52:51 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:54 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:54 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:52:54 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:52:57 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:52:57 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:52:57 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:00 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:00 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:00 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:03 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:03 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:03 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:06 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:06 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:06 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:09 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:09 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:09 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:12 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:12 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:12 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:15 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:15 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:15 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:18 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:18 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:18 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:21 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:21 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:21 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:24 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:24 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:24 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:53:27 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.002.147;1080;0010;
+2022-02-25 10:53:27 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder targetIp=1080;0010;
+2022-02-25 10:53:27 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)
+2022-02-25 10:56:55 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 27252 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:56:55 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:56:56 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:56:56 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:56:56 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:56:56 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:56:56 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:56:56 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1071 ms
+2022-02-25 10:56:57 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:56:57 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:56:57 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.06 seconds (JVM running for 3.12)
+2022-02-25 10:56:57 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:56:57 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:56:58 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xd5332fbc] REGISTERED
+2022-02-25 10:56:58 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xd5332fbc] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:56:58 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xd5332fbc, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:56:58 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f71be92] REGISTERED
+2022-02-25 10:56:58 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f71be92] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:56:58 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f71be92, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:57:19 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 26724 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-25 10:57:19 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-25 10:57:21 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-25 10:57:21 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:57:21 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-25 10:57:21 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-25 10:57:21 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-25 10:57:21 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1186 ms
+2022-02-25 10:57:21 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-25 10:57:21 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-25 10:57:21 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.355 seconds (JVM running for 4.025)
+2022-02-25 10:57:21 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-25 10:57:21 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-25 10:57:22 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xb61e7713] REGISTERED
+2022-02-25 10:57:22 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xb61e7713] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-25 10:57:22 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f8625c3] REGISTERED
+2022-02-25 10:57:22 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xb61e7713, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-25 10:57:22 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f8625c3] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-25 10:57:22 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f8625c3, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-25 10:57:42 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f8625c3, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x21f63d04, L:/127.0.0.1:4071 - R:/127.0.0.1:49337]
+2022-02-25 10:57:42 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x8f8625c3, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-25 10:57:42 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 127.0.0.1:49337 -> [连接成功]
+2022-02-25 10:58:04 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：192.168.100.194;1080;0010;
+2022-02-25 10:58:04 INFO  worker-3-1 c.w.a.s.c.WebProtocolDecoder size=10, curIndex=16, targetIp=192.168.100.194;
+2022-02-25 10:58:04 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0010,CommonOperation(context=)

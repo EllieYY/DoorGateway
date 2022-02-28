@@ -1,19 +1,16 @@
 spring:
   profiles:
-    #激活开发环境
     active: dev
 
 server:
   port: 9008
 
+
 netty:
-  tcp:
-    # 服务端口
-    port: 4070
-    # 绑定的网卡
-    ip: 0.0.0.0
-    # 服务端连接队列长度
-    connections: 2048
+  deviceClientPort: 4070
+  webClientPort: 4072
+  webClientIp: 192.168.2.147
+
 
 logging:
   level:

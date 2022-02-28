@@ -3,6 +3,7 @@ package com.wimetro.acs.common;
 import com.wimetro.acs.util.ProtocolFiledUtil.FieldParser;
 import com.wimetro.acs.util.ProtocolFiledUtil.AcsCmdPropParam;
 import com.wimetro.acs.util.ProtocolFiledUtil.CmdProp;
+import com.wimetro.acs.util.StringUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.util.CharsetUtil;
 import lombok.Data;
@@ -31,6 +32,7 @@ public abstract class Message<T extends MessageBody> {
 
     private static final String MSG_SPLITTER = ";";
     private static final int MSG_LENGTH_FIELD_LENGTH = 4;
+    private static final int MSG_TYPE_SPLITTER = 1000;
 
     private MessageHeader messageHeader;
     private T messageBody;
@@ -90,7 +92,7 @@ public abstract class Message<T extends MessageBody> {
 
     public abstract Class<T> getMessageBodyDecodeClass(int opcode);
 
-    public void decode(ByteBuf msg) {
+    public void decode(ByteBuf msg, String channelIp, String targetIp) {
         ByteBuf msgTypeBuf = msg.readBytes(4);
         msg.skipBytes(1);
         ByteBuf msgLengthBuf = msg.readBytes(4);
@@ -98,13 +100,34 @@ public abstract class Message<T extends MessageBody> {
 
         String msgTypeStr = msgTypeBuf.toString(CharsetUtil.UTF_8);
         int msgType = Integer.parseInt(msgTypeStr);
+        String lengthStr = msgLengthBuf.toString(StandardCharsets.UTF_8);
+
+        msgTypeBuf.release();
+        msgLengthBuf.release();
+
+        String msgConetxStr = msg.toString(Charset.forName("UTF-8"));
+//        String targetIp = decodeTargetIp(msgType, msgConetxStr);
 
         MessageHeader messageHeader = new MessageHeader();
         messageHeader.setMsgType(msgType);
+        // 根据消息类型，修正targetIp
+        // 网关直接处理的请求，不做转发
+        if (msgType == OperationType.HEART.getOpCode() ||
+                msgType == OperationType.REGISTRY.getOpCode() ||
+                msgType == OperationType.EVENT_PACKAGE.getOpCode()) {
+            messageHeader.setTargetIp(channelIp);
+        } else {
+            messageHeader.setTargetIp(targetIp);
+        }
+        messageHeader.setSourceIp(channelIp);
         this.messageHeader = messageHeader;
 
         // 消息体解析
-        String msgBodyStr = msg.toString(Charset.forName("UTF-8"));
+        String msgBodyStr = msgConetxStr;
+//        if (StringUtils.hasText(targetIp)) {
+//            int targetIpIndex = msgConetxStr.lastIndexOf(targetIp);
+//            msgBodyStr = msgConetxStr.substring(0, targetIpIndex);
+//        }
         T body = decodeMsgBody(msgType, msgBodyStr);
 
 //        Constructor constructor = bodyClazz.getConstructor(String.class);
@@ -113,7 +136,7 @@ public abstract class Message<T extends MessageBody> {
 
         log.info("[decode]type={},length={},{}",
                 messageHeader.getMsgType(),
-                msgLengthBuf.toString(StandardCharsets.UTF_8),
+                lengthStr,
                 body.toString());
     }
 
@@ -167,6 +190,25 @@ public abstract class Message<T extends MessageBody> {
         return body;
     }
 
+    // 解析目标机器字段：
+    // 通过字段类型判断是否是网页端报文
+    //  - 网页端报文：解析网页端报文体中最后一个字段获取目标机器IP
+    //  - 设备端报文：空串，发送的时候使用网页端设备地址作为目标IP
+    private String decodeTargetIp(int msgType, String msgBody) {
+        String ip = "";
+        if (msgType < MSG_TYPE_SPLITTER) {
+            return ip;
+        }
+
+        List<String> ipList = StringUtil.getIps(msgBody);
+        if (ipList.size() > 0) {
+            ip = ipList.get(ipList.size() - 1);
+        }
+
+        return ip;
+    }
+
+
 
     private static List<Field> getAllFields(Class cls) {
         Field[] fields = cls.getDeclaredFields();
@@ -191,7 +233,7 @@ public abstract class Message<T extends MessageBody> {
         Object val;
 
         // 字符串，无需转换
-        if (AcsGatewayConsts.ENCODER_TO_STR.equals(codecMethod)) {
+        if (Constants.ENCODER_TO_STR.equals(codecMethod)) {
             val = fieldVal.toString();
             return val;
         }
