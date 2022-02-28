@@ -61,8 +61,6 @@ public abstract class Message<T extends MessageBody> {
         if (StringUtils.hasText(bodyStr)) {
             byteBuf.writeBytes(bodyStr.getBytes(StandardCharsets.UTF_8));
         }
-
-        log.info("[encode]{}", byteBuf.toString(StandardCharsets.UTF_8));
     }
 
     private String encodeMsgBody(List<AcsCmdPropParam> sParams) {
@@ -124,17 +122,10 @@ public abstract class Message<T extends MessageBody> {
 
         // 消息体解析
         String msgBodyStr = msgConetxStr;
-//        if (StringUtils.hasText(targetIp)) {
-//            int targetIpIndex = msgConetxStr.lastIndexOf(targetIp);
-//            msgBodyStr = msgConetxStr.substring(0, targetIpIndex);
-//        }
         T body = decodeMsgBody(msgType, msgBodyStr);
-
-//        Constructor constructor = bodyClazz.getConstructor(String.class);
-//        T body = (T)constructor.newInstance(msgBodyStr);
         this.messageBody = body;
 
-        log.info("[decode]type={},length={},{}",
+        log.debug("[decode]type={},length={},{}",
                 messageHeader.getMsgType(),
                 lengthStr,
                 body.toString());

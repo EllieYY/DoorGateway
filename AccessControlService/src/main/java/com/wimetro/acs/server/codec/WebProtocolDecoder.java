@@ -28,8 +28,8 @@ public class WebProtocolDecoder extends MessageToMessageDecoder<ByteBuf> {
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf byteBuf, List<Object> out) throws Exception {
 
-//        String contextStr = byteBuf.toString(CharsetUtil.UTF_8);
-//        log.info("WebProtocolDecoder接收消息：" + contextStr);
+        String contextStr = byteBuf.toString(CharsetUtil.UTF_8);
+        log.info("WebProtocolDecoder接收消息：" + contextStr);
 
         ByteBuf msgTypeBuf = byteBuf.readBytes(15);
         byteBuf.skipBytes(1);    // 分隔符

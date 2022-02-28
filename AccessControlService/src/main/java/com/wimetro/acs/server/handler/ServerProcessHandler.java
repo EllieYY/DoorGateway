@@ -61,9 +61,7 @@ public class ServerProcessHandler extends SimpleChannelInboundHandler<AcsRequest
                 channel.writeAndFlush(responseMessage).addListener(new ChannelFutureListener() {
                     @Override
                     public void operationComplete(ChannelFuture future) throws Exception {
-                        if (future.isSuccess()) {
-                            log.info(responseMessage.toString() + "发送成功");
-                        } else {
+                        if (!future.isSuccess()) {
                             log.error(responseMessage.toString() + "发送失败");
                         }
                     }
@@ -76,7 +74,6 @@ public class ServerProcessHandler extends SimpleChannelInboundHandler<AcsRequest
             log.error("not writable now, message dropped");
         }
     }
-
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {

@@ -2,6 +2,7 @@ package com.wimetro.acs.common;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 /**
  * @title: AcsResponseMessage
@@ -22,5 +23,13 @@ public class AcsResponseMessage extends Message<OperationResult>{
         messageHeader.setMsgType(opCode);
         this.setMessageHeader(messageHeader);
         this.setMessageBody(result);
+    }
+
+    @Override
+    public String toString() {
+        MessageHeader header = this.getMessageHeader();
+        MessageBody body = this.getMessageBody();
+
+        return header.toString() + " " + body.toString();
     }
 }

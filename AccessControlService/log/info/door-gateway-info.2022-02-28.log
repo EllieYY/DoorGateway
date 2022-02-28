@@ -3140,3 +3140,268 @@ java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.Sched
 2022-02-28 15:39:44 INFO  worker-3-1 c.w.a.common.Message [decode]type=1080,length=0091,CommonOperation(context=V2-V1000;192.168.2.205;00:06:8E:02:CE:15;VertX_EVO_V1000;15:39:38 GMT 02/28/2022;)
 2022-02-28 15:39:44 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
 2022-02-28 15:39:44 INFO  worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送成功
+2022-02-28 15:43:01 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 21108 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:43:01 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:43:02 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:43:02 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:43:02 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:43:02 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:43:02 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:43:02 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1087 ms
+2022-02-28 15:43:03 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:43:03 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:43:03 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.258 seconds (JVM running for 4.179)
+2022-02-28 15:43:03 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:43:03 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:43:04 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x0b4adba2] REGISTERED
+2022-02-28 15:43:04 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x0b4adba2] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:43:04 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x0b4adba2, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:43:04 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x3ba7e764] REGISTERED
+2022-02-28 15:43:04 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x3ba7e764] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:43:04 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x3ba7e764, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:43:18 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x0b4adba2, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x70ba33fb, L:/192.168.2.147:4070 - R:/192.168.2.205:53948]
+2022-02-28 15:43:18 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x0b4adba2, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:43:18 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:53948 -> [连接成功]
+2022-02-28 15:43:18 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:43:18 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-28 15:43:18 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送失败
+2022-02-28 15:43:18 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-28 15:43:18 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送失败
+2022-02-28 15:43:25 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-28 15:43:25 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送失败
+2022-02-28 15:47:00 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 10636 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:47:00 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:47:01 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:47:01 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:47:01 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:47:01 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:47:01 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:47:01 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 685 ms
+2022-02-28 15:47:01 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:47:01 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:47:01 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.468 seconds (JVM running for 2.539)
+2022-02-28 15:47:01 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:47:01 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:47:02 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xcb8fee6d] REGISTERED
+2022-02-28 15:47:02 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xcb8fee6d] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:47:02 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xcb8fee6d, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:47:02 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xf82803f1] REGISTERED
+2022-02-28 15:47:02 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xf82803f1] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:47:02 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xf82803f1, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:47:05 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xcb8fee6d, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x5002477f, L:/192.168.2.147:4070 - R:/192.168.2.205:54575]
+2022-02-28 15:47:05 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xcb8fee6d, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:47:05 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:54575 -> [连接成功]
+2022-02-28 15:47:05 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:47:05 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-28 15:47:05 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-28 15:47:05 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010;
+2022-02-28 15:47:40 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 18152 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:47:40 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:47:41 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:47:41 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:47:41 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:47:41 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:47:41 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:47:41 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1108 ms
+2022-02-28 15:47:42 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:47:42 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:47:42 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.096 seconds (JVM running for 3.13)
+2022-02-28 15:47:42 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:47:42 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:47:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xfd229d76] REGISTERED
+2022-02-28 15:47:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xfd229d76] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:47:43 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xfd229d76, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:47:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x9c5f8507] REGISTERED
+2022-02-28 15:47:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x9c5f8507] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:47:43 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x9c5f8507, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:47:45 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xfd229d76, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x0d091096, L:/192.168.2.147:4070 - R:/192.168.2.205:54617]
+2022-02-28 15:47:45 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xfd229d76, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:47:45 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:54617 -> [连接成功]
+2022-02-28 15:47:45 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:47:45 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-28 15:47:45 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage{}MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80)CommonOperationResult(context=)发送失败
+2022-02-28 15:47:45 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010;
+2022-02-28 15:47:45 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage{}MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=70)CommonOperationResult(context=)发送失败
+2022-02-28 15:48:05 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010;
+2022-02-28 15:48:05 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage{}MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80)CommonOperationResult(context=)发送失败
+2022-02-28 15:50:44 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 9980 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:50:44 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:50:44 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:50:44 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:50:44 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:50:44 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:50:44 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:50:44 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 853 ms
+2022-02-28 15:50:45 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:50:45 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:50:45 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 1.888 seconds (JVM running for 2.955)
+2022-02-28 15:50:45 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:50:45 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:50:46 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe6f6919a] REGISTERED
+2022-02-28 15:50:46 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe6f6919a] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:50:46 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe6f6919a, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:50:46 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x1583b1d3] REGISTERED
+2022-02-28 15:50:46 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x1583b1d3] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:50:46 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x1583b1d3, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:50:58 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe6f6919a, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x4ccea472, L:/192.168.2.147:4070 - R:/192.168.2.205:42558]
+2022-02-28 15:50:58 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0xe6f6919a, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:50:59 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:42558 -> [连接成功]
+2022-02-28 15:50:59 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:50:59 INFO  worker-3-1 c.w.a.common.Message 192.168.2.205:4070 - [encode]0080;0010;
+2022-02-28 15:50:59 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80) CommonOperationResult(context=)发送失败
+2022-02-28 15:50:59 INFO  worker-3-1 c.w.a.common.Message 192.168.2.205:4070 - [encode]0070;0010;
+2022-02-28 15:50:59 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=70) CommonOperationResult(context=)发送失败
+2022-02-28 15:51:05 INFO  worker-3-1 c.w.a.common.Message 192.168.2.205:4070 - [encode]0080;0010;
+2022-02-28 15:51:05 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80) CommonOperationResult(context=)发送失败
+2022-02-28 15:51:47 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 28132 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:51:47 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:51:48 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:51:48 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:51:48 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:51:48 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:51:48 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:51:48 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1155 ms
+2022-02-28 15:51:48 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:51:49 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:51:49 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.292 seconds (JVM running for 3.442)
+2022-02-28 15:51:49 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:51:49 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:51:50 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9ce6417a] REGISTERED
+2022-02-28 15:51:50 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9ce6417a] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:51:50 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9ce6417a, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:51:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x2d6c285c] REGISTERED
+2022-02-28 15:51:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x2d6c285c] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:51:50 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x2d6c285c, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:51:59 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9ce6417a, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x93644ca0, L:/192.168.2.147:4070 - R:/192.168.2.205:42621]
+2022-02-28 15:51:59 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9ce6417a, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:51:59 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:42621 -> [连接成功]
+2022-02-28 15:51:59 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:51:59 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010; -> 192.168.2.205:4070
+2022-02-28 15:51:59 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:52:06 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:52:26 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:52:46 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:53:06 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:53:26 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:53:46 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:54:06 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:54:26 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:54:46 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:55:06 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:55:18 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 7524 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:55:18 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:55:19 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:55:19 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:55:19 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:55:19 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:55:19 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:55:19 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1237 ms
+2022-02-28 15:55:19 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:55:19 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:55:19 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.179 seconds (JVM running for 3.219)
+2022-02-28 15:55:19 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:55:19 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:55:20 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x99630f49] REGISTERED
+2022-02-28 15:55:20 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x99630f49] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:55:20 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x99630f49, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:55:20 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xcc907b8d] REGISTERED
+2022-02-28 15:55:20 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xcc907b8d] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:55:20 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0xcc907b8d, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:55:26 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x99630f49, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x5d640899, L:/192.168.2.147:4070 - R:/192.168.2.205:42830]
+2022-02-28 15:55:26 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x99630f49, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:55:26 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:42830 -> [连接成功]
+2022-02-28 15:55:26 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:55:26 INFO  worker-3-1 c.w.a.common.Message [encode]0070;0010; -> 192.168.2.205:4070
+2022-02-28 15:55:26 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:55:46 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:56:06 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:56:26 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:56:33 INFO  worker-3-1 c.w.a.common.Message [encode]0067;0010; -> 192.168.2.205:4070
+2022-02-28 15:56:46 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:57:06 INFO  worker-3-1 c.w.a.common.Message [encode]0080;0010; -> 192.168.2.205:4070
+2022-02-28 15:57:33 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 16164 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:57:33 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:57:34 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:57:34 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:57:34 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:57:34 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:57:34 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:57:34 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1007 ms
+2022-02-28 15:57:34 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:57:34 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:57:34 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.195 seconds (JVM running for 4.163)
+2022-02-28 15:57:34 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:57:34 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:57:35 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x28b20d74] REGISTERED
+2022-02-28 15:57:35 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x28b20d74] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:57:35 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x28b20d74, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:57:35 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x86fb1723] REGISTERED
+2022-02-28 15:57:35 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x86fb1723] BIND: 0.0.0.0/0.0.0.0:4072
+2022-02-28 15:57:35 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x86fb1723, L:/0:0:0:0:0:0:0:0:4072] ACTIVE
+2022-02-28 15:57:40 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x28b20d74, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x9cdc0bbd, L:/192.168.2.147:4070 - R:/192.168.2.205:39478]
+2022-02-28 15:57:40 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x28b20d74, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:57:40 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:39478 -> [连接成功]
+2022-02-28 15:57:40 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:57:40 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0070;0010; -> 192.168.2.205:4070
+2022-02-28 15:58:58 INFO  main c.w.a.GatewayApplication Starting GatewayApplication using Java 11.0.10 on DESKTOP-SPKKHPB with PID 10972 (D:\07_烽火门禁\00_doorGateway\AccessControlService\target\classes started by ansen in D:\07_烽火门禁\00_doorGateway\AccessControlService)
+2022-02-28 15:58:58 INFO  main c.w.a.GatewayApplication The following profiles are active: dev
+2022-02-28 15:58:59 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat initialized with port(s): 9008 (http)
+2022-02-28 15:58:59 INFO  main o.a.c.h.Http11NioProtocol Initializing ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:58:59 INFO  main o.a.c.c.StandardService Starting service [Tomcat]
+2022-02-28 15:58:59 INFO  main o.a.c.c.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-28 15:58:59 INFO  main o.a.c.c.C.[.[.[/]    Initializing Spring embedded WebApplicationContext
+2022-02-28 15:58:59 INFO  main o.s.b.w.s.c.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1123 ms
+2022-02-28 15:59:00 INFO  main o.a.c.h.Http11NioProtocol Starting ProtocolHandler ["http-nio-9008"]
+2022-02-28 15:59:00 INFO  main o.s.b.w.e.t.TomcatWebServer Tomcat started on port(s): 9008 (http) with context path ''
+2022-02-28 15:59:00 INFO  main c.w.a.GatewayApplication Started GatewayApplication in 2.158 seconds (JVM running for 3.309)
+2022-02-28 15:59:00 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 正在启动
+2022-02-28 15:59:00 INFO  main c.w.a.s.r.TwoPortNettyServer  nettyServer 使用nio模式
+2022-02-28 15:59:01 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9c24f765] REGISTERED
+2022-02-28 15:59:01 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9c24f765] BIND: 0.0.0.0/0.0.0.0:4070
+2022-02-28 15:59:01 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9c24f765, L:/0:0:0:0:0:0:0:0:4070] ACTIVE
+2022-02-28 15:59:01 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36] REGISTERED
+2022-02-28 15:59:01 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36] BIND: 0.0.0.0/0.0.0.0:4071
+2022-02-28 15:59:01 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] ACTIVE
+2022-02-28 15:59:06 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9c24f765, L:/0:0:0:0:0:0:0:0:4070] READ: [id: 0x065d8769, L:/192.168.2.147:4070 - R:/192.168.2.205:39568]
+2022-02-28 15:59:06 INFO  boss-1-1 i.n.h.l.LoggingHandler [id: 0x9c24f765, L:/0:0:0:0:0:0:0:0:4070] READ COMPLETE
+2022-02-28 15:59:06 INFO  business-4-1 c.w.a.s.h.ServerProcessHandler 192.168.2.205:39568 -> [连接成功]
+2022-02-28 15:59:06 INFO  business-4-2 c.w.a.s.r.ChannelManager 192.168.2.205:4070 - 注册成功
+2022-02-28 15:59:06 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0070;0010; -> 192.168.2.205:4070
+2022-02-28 16:06:33 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0067;0010; -> 192.168.2.205:4070
+2022-02-28 16:16:33 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0067;0010; -> 192.168.2.205:4070
+2022-02-28 16:20:42 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x956b03ff, L:/192.168.2.147:4071 - R:/192.168.2.2:51726]
+2022-02-28 16:20:42 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-28 16:20:42 INFO  business-4-6 c.w.a.s.h.ServerProcessHandler 192.168.2.2:51726 -> [连接成功]
+2022-02-28 16:20:42 INFO  business-4-6 c.w.a.s.r.ChannelManager 192.168.2.2:4071 - 注册成功
+2022-02-28 16:20:42 INFO  worker-3-2 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：  192.168.2.205;0045;0010;
+2022-02-28 16:20:42 INFO  business-4-1 c.w.a.s.r.ChannelManager 192.168.2.2:4071 !- 注销
+2022-02-28 16:20:42 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51726 -> [异常]原因：no found type
+2022-02-28 16:20:45 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0xa00348d3, L:/192.168.2.147:4071 - R:/192.168.2.2:51727]
+2022-02-28 16:20:45 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-28 16:20:45 INFO  business-4-4 c.w.a.s.h.ServerProcessHandler 192.168.2.2:51727 -> [连接成功]
+2022-02-28 16:20:45 INFO  business-4-4 c.w.a.s.r.ChannelManager 192.168.2.2:4071 - 注册成功
+2022-02-28 16:20:45 INFO  business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51726 !- [断开连接]
+2022-02-28 16:20:45 INFO  worker-3-3 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：  192.168.2.205;0012;0012;2;
+2022-02-28 16:20:45 INFO  business-4-5 c.w.a.s.r.ChannelManager 192.168.2.2:4071 !- 注销
+2022-02-28 16:20:45 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51727 -> [异常]原因：no found type
+2022-02-28 16:20:49 INFO  business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51727 !- [断开连接]
+2022-02-28 16:21:23 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x98148584, L:/192.168.2.147:4071 - R:/192.168.2.2:51746]
+2022-02-28 16:21:23 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-28 16:21:23 INFO  business-4-3 c.w.a.s.h.ServerProcessHandler 192.168.2.2:51746 -> [连接成功]
+2022-02-28 16:21:23 INFO  business-4-3 c.w.a.s.r.ChannelManager 192.168.2.2:4071 - 注册成功
+2022-02-28 16:21:23 INFO  worker-3-4 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：  192.168.2.205;0045;0010;
+2022-02-28 16:21:23 INFO  business-4-9 c.w.a.s.r.ChannelManager 192.168.2.2:4071 !- 注销
+2022-02-28 16:21:23 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51746 -> [异常]原因：no found type
+2022-02-28 16:21:25 INFO  business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51746 !- [断开连接]
+2022-02-28 16:21:25 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ: [id: 0x521dddd7, L:/192.168.2.147:4071 - R:/192.168.2.2:51748]
+2022-02-28 16:21:25 INFO  boss-1-2 i.n.h.l.LoggingHandler [id: 0x57ae6b36, L:/0:0:0:0:0:0:0:0:4071] READ COMPLETE
+2022-02-28 16:21:25 INFO  business-4-10 c.w.a.s.h.ServerProcessHandler 192.168.2.2:51748 -> [连接成功]
+2022-02-28 16:21:25 INFO  business-4-10 c.w.a.s.r.ChannelManager 192.168.2.2:4071 - 注册成功
+2022-02-28 16:21:25 INFO  worker-3-5 c.w.a.s.c.WebProtocolDecoder WebProtocolDecoder接收消息：  192.168.2.205;0012;0012;2;
+2022-02-28 16:21:25 INFO  business-4-1 c.w.a.s.r.ChannelManager 192.168.2.2:4071 !- 注销
+2022-02-28 16:21:25 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51748 -> [异常]原因：no found type
+2022-02-28 16:21:29 INFO  business-4-4 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51748 !- [断开连接]
+2022-02-28 16:26:33 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0067;0010; -> 192.168.2.205:4070
+2022-02-28 16:36:33 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0067;0010; -> 192.168.2.205:4070
+2022-02-28 16:46:34 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0067;0010; -> 192.168.2.205:4070
+2022-02-28 16:56:34 INFO  worker-3-1 c.w.a.s.c.DeviceProtocolEncoder [encode]0067;0010; -> 192.168.2.205:4070

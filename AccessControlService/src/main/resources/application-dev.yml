@@ -38,5 +38,5 @@ activemq:
 
 netty:
   deviceClientPort: 4070
-  webClientPort: 4072
+  webClientPort: 4071
   webClientIp: 127.0.0.1

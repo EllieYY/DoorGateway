@@ -93,3 +93,16 @@
 2022-02-28 15:36:28 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 发送目标10.40.3.28:4070未注册
 2022-02-28 15:37:01 ERROR business-4-3 c.w.a.s.h.ServerProcessHandler 发送目标127.0.0.1:4072未注册
 2022-02-28 15:37:21 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler 发送目标127.0.0.1:4072未注册
+2022-02-28 15:43:18 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送失败
+2022-02-28 15:43:18 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送失败
+2022-02-28 15:43:25 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage()发送失败
+2022-02-28 15:47:45 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage{}MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80)CommonOperationResult(context=)发送失败
+2022-02-28 15:47:45 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage{}MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=70)CommonOperationResult(context=)发送失败
+2022-02-28 15:48:05 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler AcsResponseMessage{}MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80)CommonOperationResult(context=)发送失败
+2022-02-28 15:50:59 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80) CommonOperationResult(context=)发送失败
+2022-02-28 15:50:59 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=70) CommonOperationResult(context=)发送失败
+2022-02-28 15:51:05 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80) CommonOperationResult(context=)发送失败
+2022-02-28 16:20:42 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51726 -> [异常]原因：no found type
+2022-02-28 16:20:45 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51727 -> [异常]原因：no found type
+2022-02-28 16:21:23 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51746 -> [异常]原因：no found type
+2022-02-28 16:21:25 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.2:51748 -> [异常]原因：no found type
