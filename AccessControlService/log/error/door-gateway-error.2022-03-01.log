@@ -1,0 +1,45 @@
+2022-03-01 09:23:41 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.194:38002 -> [异常]原因：no found type
+2022-03-01 09:23:44 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 发送目标127.0.0.1:4071未注册
+2022-03-01 09:26:47 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler /192.168.2.205:49765 -> [异常]原因：no found type
+2022-03-01 09:26:49 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.205:4070未注册
+2022-03-01 09:26:50 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.205:4070未注册
+2022-03-01 09:26:59 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.205:4070未注册
+2022-03-01 09:35:35 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler /192.168.2.205:47268 -> [异常]原因：java.lang.NullPointerException
+2022-03-01 09:35:38 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.205:4070未注册
+2022-03-01 09:35:40 ERROR business-4-6 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.205:4070未注册
+2022-03-01 09:36:00 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.205:4070未注册
+2022-03-01 09:53:22 ERROR worker-3-3 c.w.a.s.c.DeviceProtocolDecoder 无法解析报文：
+2022-03-01 09:53:24 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler 发送目标127.0.0.1:4071未注册
+2022-03-01 09:55:30 ERROR worker-3-3 c.w.a.s.c.DeviceProtocolDecoder [无法解析报文]192.168.2.205:4070 - 9920;0010;
+2022-03-01 09:55:33 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler 发送目标127.0.0.1:4071未注册
+2022-03-01 09:58:57 ERROR worker-3-3 c.w.a.s.c.DeviceProtocolDecoder [无法解析报文]192.168.2.205:4070 - 9920;0010;
+2022-03-01 09:59:56 ERROR worker-3-2 c.w.a.s.c.WebProtocolDecoder [无法解析报文]192.168.2.194:4071 -   192.168.2.205;0045;0010;
+2022-03-01 09:59:58 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler 发送目标192.168.2.194:4071未注册
+2022-03-01 10:10:26 ERROR worker-3-4 c.w.a.s.c.WebProtocolDecoder [无法解析报文]192.168.2.194:4071 -   192.168.2.205;0045;0010;
+2022-03-01 10:11:50 ERROR worker-3-1 c.w.a.s.h.ServerProcessHandler MessageHeader(sourceIp=192.168.2.205:4070, targetIp=192.168.2.205:4070, msgType=80) CommonOperationResult(context=)发送失败
+2022-03-01 10:11:43 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071
+2022-03-01 10:11:53 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.205:4070
+2022-03-01 10:11:53 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39508 -> [异常]原因：你的主机中的软件中止了一个已建立的连接。
+2022-03-01 10:12:02 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.205:4070
+2022-03-01 10:12:22 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.205:4070
+2022-03-01 13:35:57 ERROR worker-3-2 c.w.a.s.c.WebProtocolDecoder [无法解析报文]192.168.2.194:4071 -   192.168.2.205;0045;0010;
+2022-03-01 13:36:00 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071
+2022-03-01 13:39:08 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.205:59163 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 14:20:29 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.205:36973 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 14:27:35 ERROR business-4-9 c.w.a.s.h.ServerProcessHandler /192.168.2.205:38789 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 14:29:39 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071
+2022-03-01 14:31:07 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler /192.168.2.205:39045 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 14:32:24 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071
+2022-03-01 14:35:30 ERROR business-4-1 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071
+2022-03-01 14:46:03 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:42799 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 14:48:59 ERROR business-4-8 c.w.a.s.h.ServerProcessHandler /192.168.2.205:41142 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 15:52:09 ERROR business-4-4 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.205:4070
+2022-03-01 15:53:17 ERROR business-4-5 c.w.a.s.h.ServerProcessHandler /192.168.2.205:40743 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 15:53:51 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071
+2022-03-01 15:57:29 ERROR worker-3-1 c.w.a.s.c.DeviceProtocolDecoder [无法解析报文]192.168.2.205:4070 - [1095;0032;0;1;00 00 00 00 00 00;]
+2022-03-01 15:57:49 ERROR worker-3-1 c.w.a.s.c.DeviceProtocolDecoder [无法解析报文]192.168.2.205:4070 - [1095;0032;0;1;00 00 00 00 00 00;]
+2022-03-01 15:58:09 ERROR worker-3-1 c.w.a.s.c.DeviceProtocolDecoder [无法解析报文]192.168.2.205:4070 - [1095;0032;0;1;00 00 00 00 00 00;]
+2022-03-01 15:58:29 ERROR worker-3-1 c.w.a.s.c.DeviceProtocolDecoder [无法解析报文]192.168.2.205:4070 - [1095;0032;0;1;00 00 00 00 00 00;]
+2022-03-01 16:27:59 ERROR business-4-2 c.w.a.s.h.ServerProcessHandler /192.168.2.205:58202 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 16:28:46 ERROR business-4-10 c.w.a.s.h.ServerProcessHandler /192.168.2.205:58231 -> [异常]原因：远程主机强迫关闭了一个现有的连接。
+2022-03-01 16:29:44 ERROR business-4-7 c.w.a.s.h.ServerProcessHandler [发送目标未注册] - 192.168.2.194:4071

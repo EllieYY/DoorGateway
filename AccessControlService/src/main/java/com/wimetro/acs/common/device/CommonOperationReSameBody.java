@@ -9,16 +9,16 @@ import lombok.Data;
  * @title: CommonOperation
  * @author: Ellie
  * @date: 2022/02/10 16:10
- * @description: 返回报文体为空的operation
+ * @description: 报文体部分透传
  **/
 @Data
-public class CommonOperation extends Operation {
+public class CommonOperationReSameBody extends Operation {
     @CmdProp(index = 1)
     private String context;
 
     @Override
     public OperationResult execute() {
-        CommonOperationResult response = new CommonOperationResult("");
+        CommonOperationResult response = new CommonOperationResult(context);
         return response;
     }
 }

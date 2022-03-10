@@ -3,22 +3,19 @@ package com.wimetro.acs.common.device;
 import com.wimetro.acs.common.Operation;
 import com.wimetro.acs.common.OperationResult;
 import com.wimetro.acs.util.ProtocolFiledUtil.CmdProp;
-import lombok.Data;
 
 /**
- * @title: RegisterOperation
+ * @title: CommonOperationWithoutBody
  * @author: Ellie
- * @date: 2022/02/28 11:25
- * @description:
+ * @date: 2022/03/01 11:04
+ * @description: 响应部分不包含报文体
  **/
-@Data
-public class RegisterOperation extends Operation {
+public class CommonOperationReNoneBody extends Operation {
     @CmdProp(index = 1)
     private String context;
 
     @Override
     public OperationResult execute() {
-
         CommonOperationResult response = new CommonOperationResult("");
         return response;
     }

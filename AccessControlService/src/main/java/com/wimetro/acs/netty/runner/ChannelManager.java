@@ -1,6 +1,8 @@
-package com.wimetro.acs.server.runner;
+package com.wimetro.acs.netty.runner;
 
+import com.wimetro.acs.common.Constants;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelId;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.ChannelGroupFuture;
 import io.netty.channel.group.ChannelMatcher;
@@ -9,6 +11,7 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
+import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -23,13 +26,14 @@ public class ChannelManager {
             new DefaultChannelGroup("ChannelGroups", GlobalEventExecutor.INSTANCE);
 
     private static ConcurrentHashMap<String, Channel> CHANNEL_MAP = new ConcurrentHashMap();
+    private static ConcurrentHashMap<ChannelId, Integer> CHANNEL_LOSS_CONNECT_MAP = new ConcurrentHashMap();
 
     public static String getChannelKey(Channel channel) {
         InetSocketAddress remoteAddress = (InetSocketAddress) channel.remoteAddress();
         InetSocketAddress localAddress = (InetSocketAddress) channel.localAddress();
         String ip = remoteAddress.getAddress().getHostAddress();
         int port = localAddress.getPort();
-        String key = ip + ":" + port;
+        String key = ip + Constants.IP_PORT_SPLITTER + port;
         return key;
     }
 
@@ -42,7 +46,7 @@ public class ChannelManager {
 
         String key = getChannelKey(channel);
         CHANNEL_MAP.put(key, channel);
-        log.info("{} - 注册成功", key);
+        log.info("[注册] == {}", key);
     }
 
     public static boolean hasRegistered(String key) {
@@ -72,7 +76,7 @@ public class ChannelManager {
         String key = getChannelKey(channel);
         if (CHANNEL_MAP.containsKey(key)) {
             CHANNEL_MAP.remove(key);
-            log.info("{} !- 注销", key);
+            log.info("[注销] != {}", key);
         }
     }
 
@@ -82,6 +86,21 @@ public class ChannelManager {
             CHANNEL_MAP.remove(key);
         }
     }
+
+    // channel空闲检测
+    public static void updateChannelLossConnectTime(ChannelId channelId, int lossConnectTime) {
+        CHANNEL_LOSS_CONNECT_MAP.put(channelId, lossConnectTime);
+    }
+
+    public static int getChannelLossConnectTime(ChannelId channelId) {
+        Integer value = CHANNEL_LOSS_CONNECT_MAP.get(channelId);
+        if (Objects.isNull(value)) {
+            return 0;
+        } else {
+            return value.intValue();
+        }
+    }
+
 
     // group操作管理 ========
     public static void addChannelToGroup(Channel channel) {

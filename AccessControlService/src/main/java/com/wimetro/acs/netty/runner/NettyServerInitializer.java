@@ -1,9 +1,10 @@
-package com.wimetro.acs.server.runner;
+package com.wimetro.acs.netty.runner;
 
 import com.wimetro.acs.common.Constants;
-import com.wimetro.acs.server.codec.*;
-import com.wimetro.acs.server.handler.AcceptorIdleStateTrigger;
-import com.wimetro.acs.server.handler.ServerProcessHandler;
+import com.wimetro.acs.config.NettyConfig;
+import com.wimetro.acs.netty.codec.*;
+import com.wimetro.acs.netty.handler.AcceptorIdleStateTrigger;
+import com.wimetro.acs.netty.handler.ServerProcessHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
@@ -22,24 +23,22 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class NettyServerInitializer extends ChannelInitializer<SocketChannel> {
     UnorderedThreadPoolEventExecutor businessGroup = null;
-    private String webKey;
-    private int devicePort;
-    private int webPort;
+    private NettyConfig nettyConfig;
 
-    public NettyServerInitializer(UnorderedThreadPoolEventExecutor businessGroup, String webKey,
-                                  int devicePort, int webPort) {
+    public NettyServerInitializer(UnorderedThreadPoolEventExecutor businessGroup, NettyConfig nettyConfig) {
         this.businessGroup = businessGroup;
-        this.webKey = webKey;
-        this.devicePort = devicePort;
-        this.webPort = webPort;
+        this.nettyConfig = nettyConfig;
     }
 
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         ChannelPipeline pipeline = socketChannel.pipeline();
 
+        int devicePort = nettyConfig.getDeviceClientPort();
+        String webKey = nettyConfig.getWebClientIp() + ":" + nettyConfig.getWebClientPort();
+
         int localPort = socketChannel.localAddress().getPort();
-        if (localPort == webPort) {
+        if (localPort == nettyConfig.getWebClientPort()) {
             pipeline.addLast("webFrameDecoder", new WebFrameDecoder());
             pipeline.addLast("webProtocolDecoder", new WebProtocolDecoder(devicePort));
             pipeline.addLast("webProtocolEncoder", new WebProtocolEncoder());
@@ -49,19 +48,13 @@ public class NettyServerInitializer extends ChannelInitializer<SocketChannel> {
                     Constants.SERVER_WRITE_IDEL_TIME_OUT,
                     Constants.SERVER_ALL_IDEL_TIME_OUT,
                     TimeUnit.SECONDS));
-            pipeline.addLast(new AcceptorIdleStateTrigger());
+            pipeline.addLast(new AcceptorIdleStateTrigger(nettyConfig));
             pipeline.addLast("deviceFrameDecoder", new DeviceFrameDecoder());
             pipeline.addLast("deviceProtocolDecoder", new DeviceProtocolDecoder(webKey));
             pipeline.addLast("deviceProtocolEncoder", new DeviceProtocolEncoder());
-
         } else {
             log.error("请检查服务监听端口配置，不支持端口号{}的数据处理。", localPort);
         }
-
-        pipeline.addLast(businessGroup,"processHandler", new ServerProcessHandler());
-        //根据端口动态的选择解码器
-//        pipeline.addLast(new NettyServerDecoder(localPort));
-//        pipeline.addLast(new NettyServerHandler());
-
+        pipeline.addLast(businessGroup,"processHandler", new ServerProcessHandler(nettyConfig));
     }
 }

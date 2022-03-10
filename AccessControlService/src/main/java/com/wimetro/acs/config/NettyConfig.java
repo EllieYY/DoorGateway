@@ -14,8 +14,9 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties("netty")
 @Configuration
 @Data
-public class NettyClientConfig {
+public class NettyConfig {
     private int deviceClientPort;
     private int webClientPort;
     private String webClientIp;
+    private int deviceReconnnectPort;
 }

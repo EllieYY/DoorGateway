@@ -1,4 +1,4 @@
-package com.wimetro.acs.server.codec;
+package com.wimetro.acs.netty.codec;
 
 import com.wimetro.acs.common.AcsResponseMessage;
 import com.wimetro.acs.util.StringUtil;
@@ -6,7 +6,6 @@ import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageEncoder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.util.StringUtils;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;

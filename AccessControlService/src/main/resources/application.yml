@@ -5,6 +5,17 @@ spring:
 server:
   port: 9008
 
+mybatis-plus:
+  # 实体类扫描路径 com.wim.iafc.*.entity
+  type-aliases-package: com.wimetro.acs.**.model
+  # xml 扫描路径
+  mapper-locations: classpath*:/mapper/*.xml
+  #  mapper-locations: classpath:**/*.xml
+  configuration:
+    jdbc-type-for-null: null
+  global-config:
+    # 关闭 mybatis-plus的 banner
+    banner: false
 
 netty:
   deviceClientPort: 4070

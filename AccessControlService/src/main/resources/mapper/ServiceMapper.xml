@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ 版本:v1.0.1
+  ~   修改时间:
+  ~
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wimetro.acs.mapper.ServiceMapper">
+	<!-- 处理 考勤信息     -->
+    <insert id="insertAttendanceDetail" parameterType="java.util.Map">
+        <choose>
+            <when test="eventmessagetype=='01'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,uniqueid,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'), #{hexcardpin} , #{controllip}, #{uniqueid}
+                ,t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+            <when test="eventmessagetype=='02'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{hexcardpin} , #{controllip} ,t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+            <when test="eventmessagetype=='03'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,pin,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{hexcardpin} , #{controllip},
+                #{pin},t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+            <when test="eventmessagetype=='04'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,uniqueid,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'), #{hexcardpin} , #{controllip}, #{uniqueid}
+                ,t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+            <when test="eventmessagetype=='05'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,uniqueid,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'), #{hexcardpin} , #{controllip}, #{uniqueid}
+                ,t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+            <when test="eventmessagetype=='26'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,uniqueid,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'), #{hexcardpin} , #{controllip}, #{uniqueid}
+                ,t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+            <when test="eventmessagetype=='41'">
+                insert into a_collect_data (attendacetime,hexcardpin,controllip,uniqueid,employee_no)
+                select STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'), #{hexcardpin} , #{controllip}, #{uniqueid}
+                ,t1.employee_no
+                from o_employee t1 left join c_card_issue t2 on t1.employee_no = t2.employee_no
+                where t2.card_no=#{hexcardpin}
+            </when>
+        </choose>
+    </insert>
+    
+	<!-- 插入门禁打卡记录 -->
+    <insert id="insertAccessCard" parameterType="map">
+        <choose>
+            <when test="eventmessagetype=='01' ">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+            <when test="eventmessagetype=='02'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin})
+            </when>
+            <when test="eventmessagetype=='03'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+            <when test="eventmessagetype=='04'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+            <when test="eventmessagetype=='05'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+            <when test="eventmessagetype=='26'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+            <when test="eventmessagetype=='27'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+            <when test="eventmessagetype=='41'">
+                insert into a_access_record
+                (messagetype,msgid,eventmessagetype,classcode,taskcode,eventcode,priority,msgtime,macaddr,interfaceid,readeraddress,card_no,uniqueid)
+                values
+                (#{messagetype},#{msgid},#{eventmessagetype},#{classcode},#{taskcode},#{eventcode},#{priority},
+                STR_TO_DATE(#{msgtime}, '%H:%i:%s GMT %m/%d/%Y'),#{macaddr},#{interfaceid},#{readeraddress},#{hexcardpin},#{uniqueid})
+            </when>
+        </choose>
+    </insert>
+
+	<!-- 获取门禁打卡门信息 -->
+    <select id="selectDoorAddress" resultType="string">
+        SELECT
+			CONCAT(building_no, '楼 ', floor_no, '层 ', door_name) dooraddress
+		FROM
+			d_door t1
+		INNER JOIN d_device t2 ON t1.device_no = t2.device_no and t1.park_no = t2.park_no
+		WHERE
+			interface_no = #{interface_no} 
+		and reader_no = #{reader_no} 
+		and t2.macaddr= #{macaddr}
+    </select>
+
+
+    <resultMap id="personInfoMap" type="com.wimetro.acs.model.PersonInfo">
+        <id column="employee_no" property="employee_no"></id>
+        <id column="employee_name" property="employee_name"></id>
+        <id column="dept_name" property="dept_name"></id>
+        <id column="card_no" property="card_no"></id>
+    </resultMap>
+
+	<!-- 获取卡号对应的员工信息 -->
+    <select id="selectPeopleInfo" resultMap="personInfoMap">
+		SELECT
+			t3.employee_no employee_no,
+			t3.employee_name employee_name,
+			t4.dept_name dept_name,
+			t1.card_no card_no
+		FROM
+			c_card_info t1
+		INNER JOIN c_card_issue t2 ON t1.card_no = t2.card_no
+		INNER JOIN o_employee t3 ON t2.employee_no = t3.employee_no
+		INNER JOIN t_dept t4 ON t3.dept_no = t4.dept_id
+		WHERE
+			t1.card_no = #{card_no}
+    </select>
+    
+	<!--   根据ip地址更新门禁设备在线状态，时间信息 -->
+    <update id="updateDeviceState">
+        update d_device 
+        set comm_state ='1',
+        device_time = STR_TO_DATE(#{dev_time}, '%H:%i:%s GMT %m/%d/%Y') ,
+        heartbeat_time = STR_TO_DATE(#{up_time}, '%Y-%m-%d %H:%i:%s')
+        where device_ip = #{dev_ip}
+    </update>
+    
+	<!--  重置所有设备状态为脱机 -->
+    <update id="restoreDeviceState">
+      update d_device set comm_state='0'  
+    </update>
+
+
+    <select id="queryAllV100Info" resultType="java.util.HashMap">
+        SELECT
+            dd.park_no,
+            dv.device_ip,
+            dd.interface_no
+        FROM
+            d_door dd
+        INNER JOIN d_device dv on dd.park_no = dv.park_no and dd.device_no = dv.device_no
+        GROUP BY
+            dd.park_no,
+            dv.device_ip,
+            dd.interface_no
+        ORDER BY
+            dd.park_no,
+            dv.device_ip,
+            dd.interface_no + 0
+    </select>
+
+	<!-- 测试 -->
+    <select id="testQuery" resultType="string">
+        SELECT
+			CONCAT(building_no, '楼 ', floor_no, '层 ', door_name) dooraddress
+		FROM
+			d_door t1 where door_no = '2'
+    </select>
+</mapper>

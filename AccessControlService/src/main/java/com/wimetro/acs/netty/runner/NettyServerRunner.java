@@ -1,9 +1,9 @@
-package com.wimetro.acs.server.runner;
+package com.wimetro.acs.netty.runner;
 
-import com.wimetro.acs.server.codec.DeviceFrameDecoder;
-import com.wimetro.acs.server.codec.DeviceProtocolDecoder;
-import com.wimetro.acs.server.codec.DeviceProtocolEncoder;
-import com.wimetro.acs.server.handler.ServerProcessHandler;
+import com.wimetro.acs.netty.codec.DeviceFrameDecoder;
+import com.wimetro.acs.netty.codec.DeviceProtocolDecoder;
+import com.wimetro.acs.netty.codec.DeviceProtocolEncoder;
+import com.wimetro.acs.netty.handler.ServerProcessHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -79,7 +79,7 @@ public class NettyServerRunner implements ApplicationRunner, ApplicationListener
 
                     pipeline.addLast("infolog", infoLogHandler);
 
-                    pipeline.addLast(businessGroup, new ServerProcessHandler());
+                    pipeline.addLast(businessGroup, new ServerProcessHandler(null));
 
 //                    pipeline.addLast("keepalive", new KeepaliveHandler());
                 }

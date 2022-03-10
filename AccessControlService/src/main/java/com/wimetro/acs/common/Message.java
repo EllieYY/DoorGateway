@@ -61,10 +61,16 @@ public abstract class Message<T extends MessageBody> {
         if (StringUtils.hasText(bodyStr)) {
             byteBuf.writeBytes(bodyStr.getBytes(StandardCharsets.UTF_8));
         }
+
+        // 控制心跳数据打印
+        if (messageHeader.getMsgType() != OperationType.HEART.getReOpCode()) {
+            log.info("[encode]{} -> [{}]", messageHeader.getTargetIp(), byteBuf.toString(StandardCharsets.UTF_8));
+        }
     }
 
     private String encodeMsgBody(List<AcsCmdPropParam> sParams) {
         StringBuilder retSb = new StringBuilder();
+        String lastField = null;
         for (AcsCmdPropParam sParam : sParams) {
             Field field = sParam.getField();
             field.setAccessible(true);
@@ -74,15 +80,20 @@ public abstract class Message<T extends MessageBody> {
                 String codecMethod = sParam.getCodec();
 
                 fieldVal = (String)codec(fieldValObj, codecMethod);
+                fieldVal = (fieldVal == null) ? "" : fieldVal;
 
             } catch (IllegalAccessException e) {
                 log.error("属性{}访问异常，消息编码失败", field.getName(), e);
                 return null;
             }
 
-            if (StringUtils.hasText(fieldVal)) {
-                retSb.append(fieldVal).append(MSG_SPLITTER);
+            if (StringUtils.hasText(fieldVal) && StringUtils.hasText(lastField)) {
+                retSb.append(lastField).append(MSG_SPLITTER);
             }
+            lastField = fieldVal;
+        }
+        if (lastField != null) {
+            retSb.append(lastField);
         }
 
         return retSb.toString();
@@ -90,7 +101,9 @@ public abstract class Message<T extends MessageBody> {
 
     public abstract Class<T> getMessageBodyDecodeClass(int opcode);
 
-    public void decode(ByteBuf msg, String channelIp, String targetIp) {
+    public boolean decode(ByteBuf msg, String channelIp, String targetIp) {
+        String contextStr = msg.toString(CharsetUtil.UTF_8);
+
         ByteBuf msgTypeBuf = msg.readBytes(4);
         msg.skipBytes(1);
         ByteBuf msgLengthBuf = msg.readBytes(4);
@@ -98,6 +111,10 @@ public abstract class Message<T extends MessageBody> {
 
         String msgTypeStr = msgTypeBuf.toString(CharsetUtil.UTF_8);
         int msgType = Integer.parseInt(msgTypeStr);
+        if (!OperationType.isProtocolOpCode(msgType)) {
+            return false;
+        }
+
         String lengthStr = msgLengthBuf.toString(StandardCharsets.UTF_8);
 
         msgTypeBuf.release();
@@ -113,11 +130,15 @@ public abstract class Message<T extends MessageBody> {
         if (msgType == OperationType.HEART.getOpCode() ||
                 msgType == OperationType.REGISTRY.getOpCode() ||
                 msgType == OperationType.EVENT_PACKAGE.getOpCode()) {
+            messageHeader.setSourceIp(channelIp);
+            messageHeader.setTargetIp(channelIp);
+        } else if (msgType == OperationType.CONTACT_CONTROLLER.getOpCode()) {   // 页面端的设备重启消息，需要回转给页面
+            messageHeader.setSourceIp(targetIp);
             messageHeader.setTargetIp(channelIp);
         } else {
+            messageHeader.setSourceIp(channelIp);
             messageHeader.setTargetIp(targetIp);
         }
-        messageHeader.setSourceIp(channelIp);
         this.messageHeader = messageHeader;
 
         // 消息体解析
@@ -125,10 +146,12 @@ public abstract class Message<T extends MessageBody> {
         T body = decodeMsgBody(msgType, msgBodyStr);
         this.messageBody = body;
 
-        log.debug("[decode]type={},length={},{}",
-                messageHeader.getMsgType(),
-                lengthStr,
-                body.toString());
+        // 控制心跳数据打印
+        if (messageHeader.getMsgType() != OperationType.HEART.getOpCode()) {
+//            log.info("解析结果：{} - {}", messageHeader.toString(), messageBody.toString());
+            log.info("[decode]{} <- [{}]", messageHeader.getSourceIp(), contextStr);
+        }
+        return true;
     }
 
     private T decodeMsgBody(int msgType, String msgBodyStr) {

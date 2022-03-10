@@ -1,7 +1,6 @@
-package com.wimetro.acs.server.runner;
+package com.wimetro.acs.netty.runner;
 
-import com.wimetro.acs.common.Constants;
-import com.wimetro.acs.config.NettyClientConfig;
+import com.wimetro.acs.config.NettyConfig;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -50,8 +49,8 @@ public class TwoPortNettyServer implements ApplicationRunner, ApplicationListene
 
     private ApplicationContext applicationContext;
 
-    private final NettyClientConfig nettyConfig;
-    public TwoPortNettyServer(NettyClientConfig nettyConfig) {
+    private final NettyConfig nettyConfig;
+    public TwoPortNettyServer(NettyConfig nettyConfig) {
         this.nettyConfig = nettyConfig;
     }
 
@@ -106,16 +105,13 @@ public class TwoPortNettyServer implements ApplicationRunner, ApplicationListene
             serverBootstrap.option(NioChannelOption.SO_REUSEADDR, true);
         }
 
-        String webKey = nettyConfig.getWebClientIp() + ":" + nettyConfig.getWebClientPort();
+
         serverBootstrap.option(ChannelOption.SO_BACKLOG,1024)
                 .childOption(ChannelOption.TCP_NODELAY,true)
                 .childOption(ChannelOption.SO_KEEPALIVE,true)
                 .childOption(ChannelOption.CONNECT_TIMEOUT_MILLIS, 60000)
-                .handler(infoLogHandler)
-                .childHandler(new NettyServerInitializer(businessGroup,
-                        webKey,
-                        nettyConfig.getDeviceClientPort(),
-                        nettyConfig.getWebClientPort()));
+//                .handler(infoLogHandler)
+                .childHandler(new NettyServerInitializer(businessGroup, nettyConfig));
 
         // 端口监听
         try {

@@ -2,41 +2,86 @@ spring:
   application:
     name: door-gateway
   datasource:
-    dynamic:
-      # 是否开启 SQL日志输出，生产环境建议关闭，有性能损耗
-      p6spy: true
-      hikari:
-        connection-timeout: 30000
-        max-lifetime: 600000
-        max-pool-size: 20
-        min-idle: 5
-        connection-test-query: select 1
-        pool-name: ibasicHikariCP
-      # 配置默认数据源
-      primary: base
-      datasource:
-        # 数据源-1，名称为 base
-        base:
-          username: root
-          password: Iafc!aliyun666
-          driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://47.97.215.180:3306/FiberCard?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
-#          url: jdbc:mysql://113.57.214.58:13306/fiberhomecard?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.97.215.180:3306/FiberCard?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+    username: root
+    password: Iafc!aliyun666
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 10
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 100
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      time-between-eviction-runs-millis: 300000
+      min-evictable-idle-time-millis: 900000
+      filters: stat,wall,slf4j,commonlogging
+      # WebStatFilter配置，说明请参考Druid Wiki，配置_配置WebStatFilter
+      web-stat-filter:
+        #是否启用StatFilter默认值false
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+      # StatViewServlet配置，说明请参考Druid Wiki，配置_StatViewServlet配置
+      stat-view-servlet:
+        #是否启用StatViewServlet（监控页面）默认值为false（考虑到安全问题默认并未启动，如需启用建议设置密码或白名单以保障安全）
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: false
+        login-username: admin
+        login-password: Iafc
+        # Spring监控配置，说明请参考Druid Github Wiki，配置_Druid和Spring关联监控配置
+        # Spring监控AOP切入点，如x.y.z.service.*,配置多个英文逗号分隔
+      filter:
+        commons-log:
+          enabled: true
+          statement-create-after-log-enabled: false
+          statement-log-enabled: false
+          statement-executable-sql-log-enable: true
+          statement-log-error-enabled: true
+          result-set-log-enabled: false
   activemq:
     broker-url: tcp://47.97.215.180:8001
     user: admin
-    password: admin
+    password: admin!aliyun888
     pool:
       enabled: true
       max-connections: 10
-      idle-timeout: 30
+      idle-timeout: 5
+  redis:
+    # Redis数据库索引（默认为 0）
+    database: 7
+    # Redis服务器地址
+    host: 47.97.215.180
+    # Redis服务器连接端口
+    port: 6379
+    # Redis 密码
+    password: Iafc!aliyun777
+    lettuce:
+      pool:
+        # 连接池中的最小空闲连接
+        min-idle: 8
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 50
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: 10000
+    # 连接超时时间（毫秒）
+    timeout: 5000
 
-activemq:
-  monitor:
-    queue: fc_access_controller
-    queue-gateway: fc_system
+#activemq:
+#  monitor:
+#    queue: fc_access_controller
+#    queue-gateway: fc_system
 
 netty:
   deviceClientPort: 4070
+  deviceReconnnectPort: 4050
   webClientPort: 4071
-  webClientIp: 127.0.0.1
+  webClientIp: 192.168.2.194
